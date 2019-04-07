@@ -7,15 +7,24 @@
   <body class="form-page">
     <header class="header">
       <div class="header__upper-line">
-        <p class="header__logo"><a href="index.html">
-          Pink
+        <a href="index.html">
           <img class="header__logo-img" src="http://placehold.it" alt="Логотип Pink">
-        </a></p>
+        </a>
         <nav class="header__main-nav">
-          <a class="header__main-nav-link" href="index.html">Главная</a>
-          <a class="header__main-nav-link" href="photos.html">Фотографии</a>
-          <a class="header__main-nav-link" href="form.html">Конкурс</a>
-          <a class="header__main-nav-link" href="#">HTML Academy</a>
+          <ul class="header__main-nav-list">
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="photos.html">Фотографии</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="form.html">Конкурс</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <h1 class="header__main-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -26,21 +35,21 @@
       <form class="share__form" method="post" action="http://echo.htmlacademy.ru">
         <fieldset class="share__form__fieldset share__form__sender-fieldset">
           <legend class="share__form-legend hidden">Данные заполнителя</legend>
-          <div class="share__form-field--sender">
+          <p class="share__form-field--sender">
             <label class="share__form-label">Фамилия:
               <input placeholder="Укажите фамилию*" required>
             </label>
-          </div>
-          <div class="share__form-field--sender">
+          </p>
+          <p class="share__form-field--sender">
             <label class="share__form-label">Имя:
               <input placeholder="Введите ваше имя*" required>
             </label>
-          </div>
-          <div class="share__form-field--sender">
+          </p>
+          <p class="share__form-field--sender">
             <label class="share__form-label">Отчество:
               <input placeholder="Ну и отчество тоже">
             </label>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="share__form__fieldset share__form__achievements-fieldset">
           <legend class="share__form-legend">Ваши безбашенные достижения в путешествии</legend>
@@ -73,16 +82,16 @@
         </fieldset>
         <fieldset class="share__form__fieldset share__form__contacts-fieldset">
           <legend class="share__form-legend">Контактная информация</legend>
-          <div class="share__form-field--contacts">
+          <p class="share__form-field--contacts">
             <label class="share__form-label">
               <input type="tel" placeholder="Номер, пожалуйста">
               Номер телефона</label>
-          </div>
-          <div class="share__form-field--contacts">
+          </p>
+          <p class="share__form-field--contacts">
             <label class="share__form-label">
               <input placeholder="Введите почту*" type="email" required>
               Адрес почты</label>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="share__form__fieldset share__form__app-fieldset">
           <legend class="share__form-legend">С каким приложением путешествовали?</legend>
@@ -112,29 +121,27 @@
       </form>
     </main>
     <footer class="footer">
-      <div class="footer__left">
-        <p class="footer__logo">
-          <a href="index.html"><img class="footer__logo-img" src="http://placehold.it" alt="Логотип Pink"></a>
-        </p>
-      </div>
-      <div class="footer__middle">
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">twitter</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">facebook</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__right">
-        <p class="footer__copyright">
-          Разработано
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__copyright-img" src="http://placehold.it" alt="HTML Academy"></a>
-        </p>
+      <div class="footer__wrapper">
+        <div class="footer__contacts contacts">
+          <a href="index.html"><img class="footer__logo-img" src="http://placehold.it" alt="логотип Pink"></a>
+        </div>
+        <div class="footer__social social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.twitter.com/htmlacademy">twitter</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">facebook</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+            Разработано
+            <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img class="footer__copyright-img" src="http://placehold.it" alt="HTML Academy"></a>
+        </div>
       </div>
     </footer>
   </body>
