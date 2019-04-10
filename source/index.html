@@ -3,10 +3,222 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="index-page">
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__upper-line">
+          <img class="page-header__logo-img" src="http://placehold.it" alt="Pink логотип">
+          <nav class="page-header__main-nav">
+            <ul class="page-header__main-nav-list">
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link header__main-nav-link--active">Главная</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="photos.html">Фотографии</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main index">
+      <section class="download-banner">
+        <div class="wrapper">
+          <h1 class="header--mobile">Взгляните на жизнь иначе!</h1>
+          <a class="btn btn--download-banner" href="#">Скачать приложение</a>
+          <ul class="download-banner__apps-list">
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Apple</a></li>
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Android</a></li>
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Windows</a></li>
+          </ul>
+          <p class="download-banner__apps-list-comment">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="wrapper">
+          <h2 class="hidden">
+            Промо
+          </h2>
+          <p class="header--mobile">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="header--mobile">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
+        <ul class="promo__features-list">
+          <div class="wrapper">
+            <li class="promo__features-item">
+              <h3 class="promo__features-header">Поднимает настроение</h3>
+              <p class="promo__features-description">
+                Приложение позволит вам побелить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="promo__features-item">
+              <h3 class="promo__features-header">Меняет мир вокруг</h3>
+              <p class="promo__features-description">
+                Сделайте снимок и украсьте его смайликом или текстовой надписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="promo__features-item">
+              <h3 class="promo__features-header">Заводит новых друзей</h3>
+              <p class="promo__features-description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </div>
+        </ul>
+        <div class="promo__screenshot-examples">
+          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обычный скриншот">
+          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обработанный в Pink скриншот">
+          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обработанный в Pink скриншот со смайликом">
+        </div>
+        <div class="promo__facts-list hidden">
+          <div class="wrapper">
+            <article class="promo__fact">
+              <h3 class="promo__fact-header">Эффект на 24 часа!</h3>
+              <p class="promo__fact-description">
+                Британский ученые провели исследование и доказали, что положительный
+                эффект от использования приложения длится целые сутки!
+              </p>
+              <a class="promo__fact-link" href="#">Узнать больше об исследовании</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="wrapper">
+          <h2 class="hidden">Комментарии</h2>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Николай Петров</span>
+              <br>
+              <span class="comment__commentator-info">25 лет, водитель трамвая</span>
+            </cite>
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в
+            комментариях к выложенной фотографии!"
+          </blockquote>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Петя Иванов</span>
+              <br>
+              <span class="comment__commentator-info">20 лет, водитель метро</span>
+            </cite>
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей тещей в
+            комментариях к выложенной фотографии!"
+          </blockquote>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Олеся Курочкина</span>
+              <br>
+              <span class="comment__commentator-info">60 лет, домохозяйка</span>
+            </cite>
+            "Такое замечательное приложение, что нет слов!"
+          </blockquote>
+        </div>
+      </section>
+      <section class="prices">
+        <h2 class="hidden">Цены</h2>
+        <table class="prices-table">
+          <tr>
+            <th class="prices-table__header">
+              <span class="prices-table__price-option-name">База</span>
+              <span class="prices-table__price-option-price">1,99 USD</span>
+            </th>
+            <th class="prices-table__header">
+              <span class="prices-table__price-option-name">Стандарт</span>
+              <span class="prices-table__price-option-price">3,99 USD</span>
+            </th>
+            <th class="prices-table__header">
+              <span class="prices-table__price-option-name">Анлим</span>
+              <span class="prices-table__price-option-price"> 9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="prices-table__data">Розовый фильтр</td>
+            <td class="prices-table__data">Розовый фильтр</td>
+            <td class="prices-table__data">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="prices-table__data">Смайлики</td>
+            <td class="prices-table__data">Смайлики</td>
+            <td class="prices-table__data">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="prices-table__data">Комментарии</td>
+            <td class="prices-table__data">Комментарии</td>
+            <td class="prices-table__data">Комментарии</td>
+          </tr>
+        </table>
+        <div class="prices-table__toggles">
+          <span class="prices-table__toggle"></span>
+          <span class="prices-table__toggle"></span>
+          <span class="prices-table__toggle"></span>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="header--mobile">
+          Остались вопросы?
+          <br>
+          Свяжитесь с нами!
+        </h2>
+        <ul class="contacts__contact-methods">
+          <li class="contacts__contact-method">
+            <h3 class="contacts__contact-method-header">Звоните:</h3>
+            <a class="contacts__address" href="tel:+78125556666">7 (812) 555 66 66</a>
+          </li>
+          <li class="contacts__contact-method">
+            <h3 class="contacts__contact-method-header">Приезжайте в гости:</h3>
+            <address class="contacts__address">ул. Большая Конюшенная, 19/8 </address>
+          </li>
+          <li class="contacts__contact-method">
+            <h3 class="contacts__contact-method-header">Пишите:</h3>
+            <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <a class="contacts__map-link" href="#"><img class="contacts__map" src="http://placehold.it" alt="Карта проезда"></a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <a href="index.html"><img class="page-footer__logo-img" src="http://placehold.it" alt="логотип Pink"></a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="https://www.twitter.com/htmlacademy">twitter</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">facebook</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="#">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            Разработано
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="page-footer__copyright-img" src="http://placehold.it" alt="HTML Academy">
+            </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
