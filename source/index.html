@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body class="index-page">
     <header class="page-header">
@@ -31,9 +31,13 @@
       </div>
     </header>
     <main class="main index">
-      <section class="download-banner">
+      <section class="main-header">
         <div class="wrapper">
           <h1 class="header--mobile">Взгляните на жизнь иначе!</h1>
+        </div>
+      </section>
+      <section class="download-banner">
+        <div class="wrapper">
           <a class="btn btn--download-banner" href="#">Скачать приложение</a>
           <ul class="download-banner__apps-list">
             <li class="download-banner__app"><a class="download-banner__app-link" href="#">Apple</a></li>
@@ -57,8 +61,8 @@
             Нам есть, что вам предложить!
           </p>
         </div>
-        <ul class="promo__features-list">
-          <div class="wrapper">
+        <div class="wrapper">
+          <ul class="promo__features-list">
             <li class="promo__features-item">
               <h3 class="promo__features-header">Поднимает настроение</h3>
               <p class="promo__features-description">
@@ -72,19 +76,14 @@
                 чтобы усилить эффект
               </p>
             </li>
-            <li class="promo__features-item">
+            <li class="promo__features-item promo__features-item--filter--smile">
               <h3 class="promo__features-header">Заводит новых друзей</h3>
               <p class="promo__features-description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                 заводите новых
               </p>
             </li>
-          </div>
-        </ul>
-        <div class="promo__screenshot-examples">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обычный скриншот">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обработанный в Pink скриншот">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обработанный в Pink скриншот со смайликом">
+          </ul>
         </div>
         <div class="promo__facts-list hidden">
           <div class="wrapper">
@@ -137,14 +136,17 @@
         <table class="prices-table">
           <tr>
             <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
               <span class="prices-table__price-option-name">База</span>
               <span class="prices-table__price-option-price">1,99 USD</span>
             </th>
             <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
               <span class="prices-table__price-option-name">Стандарт</span>
               <span class="prices-table__price-option-price">3,99 USD</span>
             </th>
             <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
               <span class="prices-table__price-option-name">Анлим</span>
               <span class="prices-table__price-option-price"> 9,99 USD</span>
             </th>

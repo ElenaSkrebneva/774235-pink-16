@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body class="index-page">
     <header class="page-header">
@@ -30,10 +30,14 @@
             </ul>
           </nav>
         </div>
-        <h1 class="header--mobile">Фотографии пользователей</h1>
       </div>
     </header>
     <main class="main photos">
+      <section class="main-header">
+        <div class="wrapper">
+          <h1 class="header--mobile">Фотографии пользователей</h1>
+        </div>
+      </section>
       <div class="wrapper">
         <p class="photos__intro">
           Взгляните на фотографии, которые выкладывают наши пользователи!
@@ -59,8 +63,8 @@
             </div>
           </div>
         </article>
-        <ul class="gallery-article-list">
-          <div class="wrapper">
+        <div class="wrapper">
+          <ul class="gallery-article-list">
             <li class="gallery-article-item">
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
@@ -139,8 +143,8 @@
                 </div>
               </article>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
       <section class="add-photo">
         <div class="add-photo__intro">

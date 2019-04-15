@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="form-page">
@@ -33,108 +33,114 @@
       </div>
     </header>
     <main class="main share">
-      <h1 class="header--mobile">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <div class="wrapper">
-        <p class="share__intro">Поделитесь своей историей и получите шанс выиграть
-        ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-        </p>
-      </div>
-      <form class="share__form" method="post" action="http://echo.htmlacademy.ru">
-        <fieldset class="share__form__fieldset share__form__sender-fieldset">
-          <div class="wrapper">
-            <legend class="share__form-legend hidden">Данные заполнителя</legend>
-            <p class="share__form-field--sender">
-              <label for="last_name" class="share__form-label">Фамилия: </label>
-              <input id="last_name" placeholder="Укажите фамилию*" required>
-            </p>
-            <p class="share__form-field--sender">
-              <label for="first_name" class="share__form-label">Имя: </label>
-              <input id="first_name" placeholder="Введите ваше имя*" required>
-            </p>
-            <p class="share__form-field--sender">
-              <label for="patroname" class="share__form-label">Отчество: </label>
-              <input id="patroname" placeholder="Ну и отчество тоже">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="share__form__fieldset share__form__achievements-fieldset">
-          <div class="wrapper">
-            <legend class="share__form-legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="share__form__achievements-list">
-              <li>
-                <input type="checkbox" name="achievement" value="shark-foto" id="shark-foto">
-                <label  class="share__form-label--checkbox" for="shark-foto">Сделал селфи с акулой</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievement" value="saw-chuck-norris" id="saw-chuck-norris">
-                <label  class="share__form-label--checkbox" for="saw-chuck-norris">Видел Чака Норриса</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievement" value="kept-the-tower" id="kept-the-tower">
-                <label  class="share__form-label--checkbox" for="kept-the-tower">Удержал башню</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievement" value="burned-on-the-beach" id="burned-on-the-beach">
-                <label  class="share__form-label--checkbox" for="burned-on-the-beach">Обгорел на пляже</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievement" value="bought-crap" id="bought-crap">
-                <label  class="share__form-label--checkbox" for="bought-crap">Накупил сувениров</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievement" value="ruined-the-hotel" id="ruined-the-hotel">
-                <label class="share__form-label--checkbox" for="ruined-the-hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="share__form__fieldset share__form__contacts-fieldset">
-          <div class="wrapper">
-            <legend class="share__form-legend">Контактная информация</legend>
-            <p class="share__form-field--contacts">
-              <label for="tel" class="share__form-label">Номер телефона</label>
-              <input id="tel" type="tel" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="share__form-field--contacts">
-              <label for="email" class="share__form-label">Адрес почты</label>
-                <input id="email" placeholder="Введите почту*" type="email" required>
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="share__form__fieldset share__form__app-fieldset">
-          <div class="wrapper">
-            <legend class="share__form-legend">С каким приложением путешествовали?</legend>
-            <ul class="share__form__app-list">
-              <li>
-                <input type="radio" name="app" value="ios" id="ios-app">
-                <label  class="share__form-label--radio" for="ios-app">Pink для iOS</label>
-              </li>
-              <li>
-                <input type="radio" name="app" value="android" id="android-app">
-                <label  class="share__form-label--radio" for="android-app">Pink на Android</label>
-              </li>
-              <li>
-                <input type="radio" name="app" value="windows" id="windows-app">
-                <label  class="share__form-label--radio" for="windows-app">Windows Phone</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="share__form__fieldset share__form__comment-fieldset">
-          <div class="wrapper">
-            <legend class="share__form-legend">Опишите свои эмоции</legend>
-            <label>
-              <textarea class="share__form-textarea" placeholder="Можно прям в карсках, не стесняясь в выражениях"></textarea>
-            </label>
-          </div>
-        </fieldset>
+      <section class="main-header">
         <div class="wrapper">
-          <button class="share__btn--submit">Отправить форму</button>
-          <p class="share__form-remark">
-            <span class="pink">*</span>-Обязательные для заполнения поля
+          <h1 class="header--mobile">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+      <section class="share__form-section">
+        <div class="wrapper">
+          <p class="share__intro">Поделитесь своей историей и получите шанс выиграть
+          ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
           </p>
         </div>
-      </form>
+        <form class="share__form" method="post" action="http://echo.htmlacademy.ru">
+          <fieldset class="share__form__fieldset share__form__sender-fieldset">
+            <div class="wrapper">
+              <div class="share__form-legend hidden">Данные заполнителя</div>
+              <p class="share__form-field--sender">
+                <label for="last_name" class="share__form__header-style share__form-label">Фамилия: </label>
+                <input id="last_name" class="share__form-text-input" placeholder="Укажите фамилию*" required>
+              </p>
+              <p class="share__form-field--sender">
+                <label for="first_name" class="share__form__header-style share__form-label">Имя: </label>
+                <input id="first_name" class="share__form-text-input" placeholder="Введите ваше имя*" required>
+              </p>
+              <p class="share__form-field--sender">
+                <label for="patroname" class="share__form__header-style share__form-label">Отчество: </label>
+                <input id="patroname" class="share__form-text-input" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="share__form__fieldset share__form__achievements-fieldset">
+            <div class="wrapper">
+              <div class="share__form__header-style share__form-legend">Ваши безбашенные достижения в путешествии</div>
+              <ul class="share__form__achievements-list">
+                <li>
+                  <input type="checkbox" name="achievement" value="shark-foto" id="shark-foto">
+                  <label  class="share__form-label--checkbox" for="shark-foto">Сделал селфи с акулой</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="achievement" value="saw-chuck-norris" id="saw-chuck-norris">
+                  <label  class="share__form-label--checkbox" for="saw-chuck-norris">Видел Чака Норриса</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="achievement" value="kept-the-tower" id="kept-the-tower">
+                  <label  class="share__form-label--checkbox" for="kept-the-tower">Удержал башню</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="achievement" value="burned-on-the-beach" id="burned-on-the-beach">
+                  <label  class="share__form-label--checkbox" for="burned-on-the-beach">Обгорел на пляже</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="achievement" value="bought-crap" id="bought-crap">
+                  <label  class="share__form-label--checkbox" for="bought-crap">Накупил сувениров</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="achievement" value="ruined-the-hotel" id="ruined-the-hotel">
+                  <label class="share__form-label--checkbox" for="ruined-the-hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="share__form__fieldset share__form__contacts-fieldset">
+            <div class="wrapper">
+              <div class="share__form__header-style share__form-legend">Контактная информация</div>
+              <p class="share__form-field--contacts">
+                <label for="tel" class="share__form__header-style">Номер телефона</label>
+                <input id="tel" class="share__form-text-input" type="tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="share__form-field--contacts">
+                <label for="email" class="share__form__header-style">Адрес почты</label>
+                  <input id="email" class="share__form-text-input" placeholder="Введите почту*" type="email" required>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="share__form__fieldset share__form__app-fieldset">
+            <div class="wrapper">
+              <div class="share__form__header-style share__form-legend">С каким приложением путешествовали?</div>
+              <ul class="share__form__app-list">
+                <li>
+                  <input type="radio" name="app" value="ios" id="ios-app">
+                  <label  class="share__form-label--radio" for="ios-app">Pink для iOS</label>
+                </li>
+                <li>
+                  <input type="radio" name="app" value="android" id="android-app">
+                  <label  class="share__form-label--radio" for="android-app">Pink на Android</label>
+                </li>
+                <li>
+                  <input type="radio" name="app" value="windows" id="windows-app">
+                  <label  class="share__form-label--radio" for="windows-app">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="share__form__fieldset share__form__comment-fieldset">
+            <div class="wrapper">
+              <div class="share__form__header-style share__form-legend">Опишите свои эмоции</div>
+              <label>
+                <textarea class="share__form-text-input share__form-textarea" placeholder="Можно прям в карсках, не стесняясь в выражениях"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <div class="wrapper">
+            <button class="share__btn--submit">Отправить форму</button>
+            <p class="share__form-remark">
+              <span class="pink">*</span>-Обязательные для заполнения поля
+            </p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

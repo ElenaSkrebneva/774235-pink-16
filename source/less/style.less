@@ -1,20 +1,42 @@
-@font--main: "Open Sans", Arial, sans-serif;
-@pink: rgb(209,39,85);
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "OpenSans Lighter";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "OpenSans Bold";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font--main: "OpenSans", Arial, sans-serif;
+@font--lighter: "OpenSans Lighter", Arial, sans-serif;
+@font--bold: "OpenSans Bold", Arial, sans-serif;
+@pink: rgb(210,40,86);
 @bg-color--1: rgb(255,255,255);
 @bg-color--2: rgb(242,242,242);
-@text-color: rgb(29,38,49);
+@text-color: rgb(40,54,69);
 
-@import "download-banner.less";
-@import "promo.less";
-@import "comments.less";
-@import "prices.less";
-@import "contacts.less";
-@import "share.less";
-@import "photos.less";
-@import "gallery.less";
-@import "add-photo.less";
-@import "page-header.less";
-@import "page-footer.less";
+@import "blocks/main-header.less";
+@import "blocks/download-banner.less";
+@import "blocks/promo.less";
+@import "blocks/comments.less";
+@import "blocks/prices.less";
+@import "blocks/contacts.less";
+@import "blocks/share.less";
+@import "blocks/photos.less";
+@import "blocks/gallery.less";
+@import "blocks/add-photo.less";
+@import "blocks/page-header.less";
+@import "blocks/page-footer.less";
 
 
 body {
@@ -30,6 +52,7 @@ body {
   padding: 10px 25px;
   border-width: 3px;
   border-style: solid;
+  font-family: @font--bold;
   font-weight: 700;
   vertical-align: middle;
   text-align: center;
@@ -43,8 +66,10 @@ body {
 
 .header--mobile {
   font-size: 24px;
-  line-height: auto;
+  font-family: "OpenSans Lighter";
   font-weight: 300;
+  text-align: center;
+  color: @bg-color--1;
 }
 
 .hidden {
