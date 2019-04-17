@@ -1,0 +1,26 @@
+.page-footer {
+  outline: 2px solid yellow;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-footer__copyright {
+  line-height: 18px;
+}
+
+.page-footer__social-list {
+  display: flex;
+}
+
+.page-footer__wrapper {
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
