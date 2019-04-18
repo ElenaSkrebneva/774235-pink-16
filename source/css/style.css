@@ -1,0 +1,361 @@
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "OpenSans Lighter";
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "OpenSans Bold";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+.main-header {
+  position: relative;
+  outline: 1px solid green;
+  background-image: url(../../img/bg-back-mobile.jpg);
+  background-color: #283645;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+  min-height: 450px;
+  overflow: hidden;
+  z-index: -2;
+}
+.main-header::after {
+  outline: 1px solid yellow;
+  content: "";
+  position: absolute;
+  width: 257px;
+  height: 286px;
+  background-image: url(../../img/iphone-hand-mobile.png);
+  background-repeat: no-repeat;
+  top: 214px;
+  left: -20px;
+  z-index: -1;
+}
+.btn--download-banner {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.download-banner {
+  background-color: #1d2631;
+  color: #ffffff;
+  padding: 26px 0;
+}
+.download-banner__apps-list-comment {
+  font-family: "OpenSans Lighter", Arial, sans-serif;
+  font-weight: 300;
+}
+.promo__features-header {
+  color: #000000;
+  font-size: 18px;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+}
+.promo__features-list {
+  background-color: #f2f2f2;
+}
+.promo__features-item--filter--smile {
+  background-image: url(../../img/iphone-screen-mobile.png);
+  background-repeat: no-repeat;
+}
+.comment__commentor {
+  display: block;
+  font-style: normal;
+}
+.comment__commentator-name {
+  color: #000000;
+  font-weight: 700;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.comment__content {
+  line-height: 30px;
+}
+.prices {
+  background-color: #f2f2f2;
+}
+.prices-table {
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+.prices-table__data {
+  line-height: 30px;
+  padding: 10px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  background-color: #ffffff;
+}
+.prices-table__header {
+  color: #ffffff;
+  background-color: #283645;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  border-bottom: none;
+  padding: 10px;
+}
+.prices-table__hit {
+  color: #ffffff;
+  background-color: #d22856;
+}
+.prices-table__price-option-name {
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.prices-table__price-option-price {
+  font-family: "OpenSans Lighter", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+.contacts__address {
+  color: #d22856;
+  font-family: "OpenSans Lighter", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+.contacts__contact-method-header {
+  font-size: 18px;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+.share {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.share__btn--submit {
+  background-color: #29ab6d;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px;
+  width: 280px;
+}
+.share__form__fieldset {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.share__form__fieldset:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+.share__form__header-style {
+  color: #d22856;
+  text-transform: uppercase;
+}
+.share__form-label {
+  color: #d22856;
+  display: block;
+}
+.share__form-label--checkbox {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.share__form-label--radio {
+  font-size: 18px;
+  color: #283645;
+  line-height: 30px;
+}
+.share__form-legend {
+  text-align: center;
+}
+.share__form-remark {
+  text-transform: uppercase;
+}
+.share__form-text-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: 2px solid #f2f2f2;
+  border-radius: 3px;
+}
+.share__form-text-input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+.share__form-text-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+.share__form-text-input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+.share__form-text-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+.share__form-textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 280px;
+  max-height: 300px;
+  width: 100%;
+}
+.share__intro {
+  line-height: 30px;
+  text-align: center;
+}
+.photos__intro {
+  line-height: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.gallery-article__author-name {
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+}
+.gallery-article__comment {
+  padding: 0;
+  margin: 0;
+}
+.gallery-article__day-photo-header {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: #d22856;
+  text-transform: uppercase;
+}
+.gallery-article__description {
+  background-color: #f2f2f2;
+  padding: 20px 15px;
+}
+.gallery-article__likes {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.gallery-article__photo-info {
+  padding: 0;
+  margin: 0;
+}
+.gallery-article__time {
+  font-family: "OpenSans Lighter", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.add-photo {
+  background-color: #f2f2f2;
+}
+.add-photo__intro {
+  line-height: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.btn--add-photo {
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1;
+  width: 280px;
+}
+.btn--add-photo--active {
+  color: #d22856;
+  border-color: #d22856;
+  opacity: 1;
+}
+.page-header__main-nav {
+  margin-bottom: 30px;
+}
+.page-header__main-nav-item {
+  background-color: #283645;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.page-header__main-nav-link {
+  color: #ffffff;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+}
+.page-footer {
+  outline: 1px solid yellow;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.page-footer__copyright {
+  line-height: 18px;
+}
+body {
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
+  width: 320px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-width: 3px;
+  border-style: solid;
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.header--mobile {
+  font-size: 24px;
+  font-family: "OpenSans Lighter";
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+}
+.hidden {
+  display: none;
+}
+.pink {
+  color: #d22856;
+}
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  outline: 1px dotted red;
+}
+
+/*# sourceMappingURL=style.css.map */

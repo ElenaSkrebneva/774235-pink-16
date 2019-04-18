@@ -3,51 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body class="index-page">
     <header class="page-header">
-      <div class="page-header__upper-line">
-        <img class="page-header__logo-img" src="http://placehold.it" alt="Pink логотип">
-        <nav class="page-header__main-nav">
-          <ul class="page-header__main-nav-list">
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link header__main-nav-link--active">Главная</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="photos.html">Фотографии</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="wrapper">
+        <div class="page-header__upper-line">
+          <img class="page-header__logo-img" src="http://placehold.it" alt="Pink логотип">
+          <nav class="page-header__main-nav">
+            <ul class="page-header__main-nav-list">
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link header__main-nav-link--active">Главная</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="photos.html">Фотографии</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main index">
-      <section class="download">
-        <h1 class="header--1">Взгляните на жизнь иначе!</h1>
-        <a class="btn--main" href="#">Скачать приложение</a>
-        <ul class="download__apps-list">
-          <li class="download__app"><a class="download__app-link" href="#">Apple</a></li>
-          <li class="download__app"><a class="download__app-link" href="#">Android</a></li>
-          <li class="download__app"><a class="download__app-link" href="#">Windows</a></li>
-        </ul>
-        <p class="download__apps-list-comment">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+      <section class="main-header main-header--with-hand">
+        <div class="wrapper">
+          <h1 class="header--1">Взгляните на жизнь иначе!</h1>
+        </div>
+      </section>
+      <section class="download-banner">
+        <div class="wrapper">
+          <a class="btn btn--download-banner" href="#">Скачать приложение</a>
+          <ul class="download-banner__apps-list">
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Apple</a></li>
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Android</a></li>
+            <li class="download-banner__app"><a class="download-banner__app-link" href="#">Windows</a></li>
+          </ul>
+          <p class="download-banner__apps-list-comment">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
       <section class="promo">
-        <h2 class="hidden">
-          Промо
-        </h2>
         <div class="wrapper">
-          <p class="promo__slogan">
+          <h2 class="hidden">
+            Промо
+          </h2>
+          <p class="header--1">
             Устали от серости мегаполиса?
           </p>
-          <p class="promo__slogan">
+          <p class="header--1">
             Нам есть, что вам предложить!
           </p>
         </div>
@@ -66,7 +76,7 @@
                 чтобы усилить эффект
               </p>
             </li>
-            <li class="promo__features-item">
+            <li class="promo__features-item promo__features-item--filter--smile">
               <h3 class="promo__features-header">Заводит новых друзей</h3>
               <p class="promo__features-description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -75,93 +85,96 @@
             </li>
           </ul>
         </div>
-        <div class="promo__screenshot-examples">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обычный скриншот">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="Обработанный в Pink скриншот">
-          <img class="promo__screenshot-example" src="http://placehold.it" alt="бработанный в Pink скриншот со смайликом">
-        </div>
         <div class="promo__facts-list hidden">
-          <article class="promo__fact">
-            <h3 class="promo__fact-header">Эффект на 24 часа!</h3>
-            <p class="promo__fact-description">
-              Британский ученые провели исследование и доказали, что положительный
-              эффект от использования приложения длится целые сутки!
-            </p>
-            <a class="promo__fact-link" href="#">Узнать больше об исследовании</a>
-          </article>
+          <div class="wrapper">
+            <article class="promo__fact">
+              <h3 class="promo__fact-header">Эффект на 24 часа!</h3>
+              <p class="promo__fact-description">
+                Британский ученые провели исследование и доказали, что положительный
+                эффект от использования приложения длится целые сутки!
+              </p>
+              <a class="promo__fact-link" href="#">Узнать больше об исследовании</a>
+            </article>
+          </div>
         </div>
       </section>
       <section class="comments">
-        <h2 class="hidden">Комментарии</h2>
-        <blockquote class="comment__content">
-          <cite class="comment__commentor">
-            <span class="comment__commentator-name">Николай Петров</span>
-            <br>
-            <span class="comment__commentator-info">25 лет, водитель трамвая</span>
-          </cite>
-          "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в
-          комментариях к выложенной фотографии!"
-        </blockquote>
-        <blockquote class="comment__content">
-          <cite class="comment__commentor">
-            <span class="comment__commentator-name">Петя Иванов</span>
-            <br>
-            <span class="comment__commentator-info">20 лет, водитель метро</span>
-          </cite>
-          "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей тещей в
-          комментариях к выложенной фотографии!"
-        </blockquote>
-        <blockquote class="comment__content">
-          <cite class="comment__commentor">
-            <span class="comment__commentator-name">Олеся Курочкина</span>
-            <br>
-            <span class="comment__commentator-info">60 лет, домохозяйка</span>
-          </cite>
-          "Такое замечательное приложение, что нет слов!"
-        </blockquote>
+        <div class="wrapper">
+          <h2 class="hidden">Комментарии</h2>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Николай Петров</span>
+              <br>
+              <span class="comment__commentator-info">25 лет, водитель трамвая</span>
+            </cite>
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в
+            комментариях к выложенной фотографии!"
+          </blockquote>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Петя Иванов</span>
+              <br>
+              <span class="comment__commentator-info">20 лет, водитель метро</span>
+            </cite>
+            "Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей тещей в
+            комментариях к выложенной фотографии!"
+          </blockquote>
+          <blockquote class="comment__content">
+            <cite class="comment__commentor">
+              <span class="comment__commentator-name">Олеся Курочкина</span>
+              <br>
+              <span class="comment__commentator-info">60 лет, домохозяйка</span>
+            </cite>
+            "Такое замечательное приложение, что нет слов!"
+          </blockquote>
+        </div>
       </section>
-      <section class="price">
+      <section class="prices">
         <h2 class="hidden">Цены</h2>
-        <table class="price-table">
+        <table class="prices-table">
           <tr>
-            <th class="price-table__header"></th>
-            <th class="price-table__header">
-              <span class="price-table__price-option-name">База</span>
-              <span class="price-table__price-option-price">1,99 USD</span>
+            <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
+              <span class="prices-table__price-option-name">База</span>
+              <span class="prices-table__price-option-price">1,99 USD</span>
             </th>
-            <th class="price-table__header">
-              <span class="price-table__price-option-name">Стандарт</span>
-              <span class="price-table__price-option-price">3,99 USD</span>
+            <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
+              <span class="prices-table__price-option-name">Стандарт</span>
+              <span class="prices-table__price-option-price">3,99 USD</span>
             </th>
-            <th class="price-table__header">
-              <span class="price-table__price-option-name">Анлим</span>
-              <span class="price-table__price-option-price"> 9,99 USD</span>
+            <th class="prices-table__header">
+              <span class="prices-table__hit">Хит</span>
+              <span class="prices-table__price-option-name">Анлим</span>
+              <span class="prices-table__price-option-price"> 9,99 USD</span>
             </th>
           </tr>
           <tr>
-            <td>Розовый фильтр</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="prices-table__data">Розовый фильтр</td>
+            <td class="prices-table__data">Розовый фильтр</td>
+            <td class="prices-table__data">Розовый фильтр</td>
           </tr>
           <tr>
-            <td>Смайлики</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="prices-table__data">Смайлики</td>
+            <td class="prices-table__data">Смайлики</td>
+            <td class="prices-table__data">Смайлики</td>
           </tr>
           <tr>
-            <td>Комментарии</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="prices-table__data">Комментарии</td>
+            <td class="prices-table__data">Комментарии</td>
+            <td class="prices-table__data">Комментарии</td>
           </tr>
         </table>
+        <div class="prices-table__toggles">
+          <span class="prices-table__toggle"></span>
+          <span class="prices-table__toggle"></span>
+          <span class="prices-table__toggle"></span>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__header">
+        <h2 class="header--1">
           Остались вопросы?
           <br>
           Свяжитесь с нами!

@@ -3,33 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body class="index-page">
     <header class="page-header">
-      <div class="page-header__upper-line">
-        <a href="index.html">
-          <img class="page-header__logo-img" src="http://placehold.it" alt="Логотип Pink">
-        </a>
-        <nav class="page-header__main-nav">
-          <ul class="page-header__main-nav-list">
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="index.html">Главная</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link header__main-nav-link--active">Фотографии</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="wrapper">
+        <div class="page-header__upper-line">
+          <a href="index.html">
+            <img class="page-header__logo-img" src="http://placehold.it" alt="Логотип Pink">
+          </a>
+          <nav class="page-header__main-nav">
+            <ul class="page-header__main-nav-list">
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link header__main-nav-link--active">Фотографии</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <h1 class="header__main-header">Фотографии пользователей</h1>
     </header>
     <main class="main photos">
+      <section class="main-header">
+        <div class="wrapper">
+          <h1 class="header--1">Фотографии пользователей</h1>
+        </div>
+      </section>
       <div class="wrapper">
         <p class="photos__intro">
           Взгляните на фотографии, которые выкладывают наши пользователи!
@@ -43,129 +51,139 @@
           <h3 class="gallery-article__day-photo-header">Панорама дня</h3>
           <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__day-photo-img" src="http://www.placehold.it" alt="Фото дня"></a>
           <div class="gallery-article__description">
-            <p class="gallery-article__photo-info">
-              <b class="gallery-article__author-name">Анна</b>
-              <span class="gallery-article__time">(5 минут назад)</span>
-            </p>
-            <p class="gallery-article__comment">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!
-            </p>
-            <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
+            <div class="wrapper">
+              <p class="gallery-article__photo-info">
+                <b class="gallery-article__author-name">Анна</b>
+                <span class="gallery-article__time">(5 минут назад)</span>
+              </p>
+              <p class="gallery-article__comment">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!
+              </p>
+              <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
+            </div>
           </div>
         </article>
-        <ul class="gallery-article-list">
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Левон</b>
-                  <span class="gallery-article__time">(5 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Вчера он на луну летат, сегодня в руки к нам попал.</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">356</span></button>
-              </div>
-            </article>
-          </li>
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Антон</b>
-                  <span class="gallery-article__time">(12 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Соседи будут рады!</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">666</span></button>
-              </div>
-            </article>
-          </li>
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Борис</b>
-                  <span class="gallery-article__time">(20 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
-              </div>
-            </article>
-          </li>
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Сергей</b>
-                  <span class="gallery-article__time">(25 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Самая кубанская в мире!</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">4</span></button>
-              </div>
-            </article>
-          </li>
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Максим</b>
-                  <span class="gallery-article__time">(40 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Где снег-то?</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">150</span></button>
-              </div>
-            </article>
-          </li>
-          <li class="gallery-article-item">
-            <article class="gallery-article">
-              <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
-              <div class="gallery-article__description">
-                <p class="gallery-article__photo-info">
-                  <b class="gallery-article__author-name">Надежда</b>
-                  <span class="gallery-article__time">(45 часов назад)</span>
-                </p>
-                <p class="gallery-article__comment">Всем GM и взаимные лайки!</p>
-                <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">2560</span></button>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section class="add-photo">
-        <h2 class="hidden">Добавь свою фотографию</h2>
-        <p class="add-photo__intro">
-          Затмите их всех!
-          <br>
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <form class="add-photo__form" method="post" action="http://echo.htmlacademy.ru">
-          <p class="add-photo__img-example">
-            <img class="add-photo__img-example-img" src="http://www.placehold.it"  alt="пример вашей фотографии">
-          </p>
-          <ul class="add-photo__filters">
-            <li class="add-photo__filters-item">
-              <label>фильтр 1
-                <input>
-              </label>
+        <div class="wrapper">
+          <ul class="gallery-article-list">
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Левон</b>
+                    <span class="gallery-article__time">(5 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Вчера он на луну летат, сегодня в руки к нам попал.</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">356</span></button>
+                </div>
+              </article>
             </li>
-            <li class="add-photo__filters-item">
-              <label>фильтр 2
-                <input>
-              </label>
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Антон</b>
+                    <span class="gallery-article__time">(12 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Соседи будут рады!</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">666</span></button>
+                </div>
+              </article>
             </li>
-            <li class="add-photo__filters-item">
-              <label>фильтр 3
-                <input>
-              </label>
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Борис</b>
+                    <span class="gallery-article__time">(20 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Сергей</b>
+                    <span class="gallery-article__time">(25 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Самая кубанская в мире!</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">4</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Максим</b>
+                    <span class="gallery-article__time">(40 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Где снег-то?</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">150</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="gallery-article-item">
+              <article class="gallery-article">
+                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <div class="gallery-article__description">
+                  <p class="gallery-article__photo-info">
+                    <b class="gallery-article__author-name">Надежда</b>
+                    <span class="gallery-article__time">(45 часов назад)</span>
+                  </p>
+                  <p class="gallery-article__comment">Всем GM и взаимные лайки!</p>
+                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">2560</span></button>
+                </div>
+              </article>
             </li>
           </ul>
-          <p class="add-photos__btns">
-            <button class="btn btn-main" type="submit">Запостить</button>
-            <button class="btn btn-second" type="reset">Отмена</button>
-          </p>
+        </div>
+      </section>
+      <section class="add-photo">
+        <div class="add-photo__intro">
+          <div class="wrapper">
+            <h2 class="hidden">Добавь свою фотографию</h2>
+            <p class="add-photo__intro">
+              Затмите их всех!
+              <br>
+              Выкладывайте все, что накопилось в телефоне!
+            </p>
+          </div>
+        </div>
+        <form class="add-photo__form" method="post" action="http://echo.htmlacademy.ru">
+          <div class="wrapper">
+            <p class="add-photo__img-example">
+              <img class="add-photo__img-example-img" src="http://www.placehold.it"  alt="пример вашей фотографии">
+            </p>
+            <ul class="add-photo__filters">
+              <li class="add-photo__filters-item">
+                <label>фильтр 1
+                  <input>
+                </label>
+              </li>
+              <li class="add-photo__filters-item">
+                <label>фильтр 2
+                  <input>
+                </label>
+              </li>
+              <li class="add-photo__filters-item">
+                <label>фильтр 3
+                  <input>
+                </label>
+              </li>
+            </ul>
+            <p class="add-photos__btns">
+              <button class="btn btn--add-photo btn--add-photo--active" type="submit">Запостить</button>
+              <button class="btn btn--add-photo" type="reset">Отмена</button>
+            </p>
+          </div>
         </form>
       </section>
     </main>
@@ -187,7 +205,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright">
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
               <img class="page-footer__copyright-img" src="http://placehold.it" alt="HTML Academy">
