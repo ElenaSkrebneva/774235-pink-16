@@ -7,21 +7,100 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 35px;
   padding-bottom: 50px;
-  min-height: 450px;
   overflow: hidden;
-  z-index: -2;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-header--with-hand::after {
+.main-header--with-hand {
+  .wrapper {
+    display: none;
+  }
+  min-height: 465px;
+  &::after {
   outline: 1px solid yellow;
   content: "";
   position: absolute;
-  width: 257px;
-  height: 286px;
+  width: @mobile-width;
+  height: 330px;
+  background-size: contain;
   background-image: url("../../img/iphone-hand-mobile.png");
   background-repeat: no-repeat;
-  top: 214px;
-  left: -20px;
-  z-index: -1;
+  bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header--1 {
+    &--index {
+      position: absolute;
+      top: 220px;
+      width: 300px;
+    }
+
+    &--photos {
+      display: inline-block;
+      width: 300px;
+    }
+
+    &--form {
+      display: inline-block;
+      width: 500px;
+    }
+  }
+
+  .main-header {
+    background-image: url("../../img/bg-back-tablet.jpg");
+    min-height: 440px;
+    padding-bottom: 85px;
+    padding-top: 75px;
+    .wrapper {
+      text-align: center;
+    }
+  }
+
+  .main-header--with-hand {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 728px;
+    &::after {
+    background-image: url("../../img/iphone-hand-tablet.png");
+    width: @tablet-width;
+    background-size: cover;
+    height: 540px;
+    bottom: 0;
+    }
+    .wrapper {
+      display: block;
+    }
+  }
+}
+@media (min-width: @desktop-width) {
+  .header--1--index {
+    top: 230px;
+    padding: 0 60px;
+  }
+
+  .main-header {
+    background-image: url("../../img/bg-back-desktop.jpg");
+    padding-top: 180px;
+    padding-bottom: 95px;
+    min-height: 385px;
+  }
+
+  .main-header--with-hand {
+    min-height: 850px;
+    &::after {
+    background-image: url("../../img/iphone-hand-desktop.png");
+    height: 640px;
+    width: 740px;
+    background-position: center;
+    bottom: 0;
+    right: 150px;
+    }
+  }
 }

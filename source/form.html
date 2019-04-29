@@ -2,17 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="form-page">
     <header class="page-header">
       <div class="wrapper">
         <div class="page-header__upper-line">
-          <a href="index.html">
-            <img class="page-header__logo-img" src="http://placehold.it" alt="Логотип Pink">
-          </a>
+          <div class="page-header__logo-line">
+            <a class="page-header__logo-link" href="index.html">
+              <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
+            </a>
+            <button id="main-nav-button" class="page-header__main-nav-button page-header__main-nav-button--closed"></button>
+          </div>
           <nav class="page-header__main-nav">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item">
@@ -35,11 +38,11 @@
     <main class="main share">
       <section class="main-header">
         <div class="wrapper">
-          <h1 class="header--1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="header--1 header--1--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
       <section class="share__form-section">
-        <div class="wrapper">
+        <div class="wrapper share__intro-wrapper">
           <p class="share__intro">Поделитесь своей историей и получите шанс выиграть
           ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
           </p>
@@ -47,18 +50,18 @@
         <form class="share__form" method="post" action="http://echo.htmlacademy.ru">
           <fieldset class="share__form__fieldset share__form__sender-fieldset">
             <div class="wrapper">
-              <div class="share__form-legend hidden">Данные заполнителя</div>
+              <div class="share__form__header-style share__form-legend">Данные заполнителя</div>
               <p class="share__form-field--sender">
                 <label for="last_name" class="share__form__header-style share__form-label">Фамилия: </label>
-                <input id="last_name" class="share__form-text-input" placeholder="Укажите фамилию*" required>
+                <input id="last_name" class="share__form-input--text" placeholder="Укажите фамилию*" required>
               </p>
               <p class="share__form-field--sender">
                 <label for="first_name" class="share__form__header-style share__form-label">Имя: </label>
-                <input id="first_name" class="share__form-text-input" placeholder="Введите ваше имя*" required>
+                <input id="first_name" class="share__form-input--text" placeholder="Введите ваше имя*" required>
               </p>
               <p class="share__form-field--sender">
                 <label for="patroname" class="share__form__header-style share__form-label">Отчество: </label>
-                <input id="patroname" class="share__form-text-input" placeholder="Ну и отчество тоже">
+                <input id="patroname" class="share__form-input--text" placeholder="Ну и отчество тоже">
               </p>
             </div>
           </fieldset>
@@ -66,28 +69,28 @@
             <div class="wrapper">
               <div class="share__form__header-style share__form-legend">Ваши безбашенные достижения в путешествии</div>
               <ul class="share__form__achievements-list">
-                <li>
-                  <input type="checkbox" name="achievement" value="shark-foto" id="shark-foto">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="shark-foto" id="shark-foto">
                   <label  class="share__form-label--checkbox" for="shark-foto">Сделал селфи с акулой</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="achievement" value="saw-chuck-norris" id="saw-chuck-norris">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="saw-chuck-norris" id="saw-chuck-norris">
                   <label  class="share__form-label--checkbox" for="saw-chuck-norris">Видел Чака Норриса</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="achievement" value="kept-the-tower" id="kept-the-tower">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="kept-the-tower" id="kept-the-tower">
                   <label  class="share__form-label--checkbox" for="kept-the-tower">Удержал башню</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="achievement" value="burned-on-the-beach" id="burned-on-the-beach">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="burned-on-the-beach" id="burned-on-the-beach">
                   <label  class="share__form-label--checkbox" for="burned-on-the-beach">Обгорел на пляже</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="achievement" value="bought-crap" id="bought-crap">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="bought-crap" id="bought-crap">
                   <label  class="share__form-label--checkbox" for="bought-crap">Накупил сувениров</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="achievement" value="ruined-the-hotel" id="ruined-the-hotel">
+                <li class="share__form__achievement-item">
+                  <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="ruined-the-hotel" id="ruined-the-hotel">
                   <label class="share__form-label--checkbox" for="ruined-the-hotel">Разгромил отель</label>
                 </li>
               </ul>
@@ -97,12 +100,12 @@
             <div class="wrapper">
               <div class="share__form__header-style share__form-legend">Контактная информация</div>
               <p class="share__form-field--contacts">
-                <label for="tel" class="share__form__header-style">Номер телефона</label>
-                <input id="tel" class="share__form-text-input" type="tel" placeholder="Номер, пожалуйста">
+                <label for="tel" class="share__form__header-style share__form-label">Номер телефона</label>
+                <input id="tel" class="share__form-input--text" type="tel" placeholder="Номер, пожалуйста">
               </p>
               <p class="share__form-field--contacts">
-                <label for="email" class="share__form__header-style">Адрес почты</label>
-                  <input id="email" class="share__form-text-input" placeholder="Введите почту*" type="email" required>
+                <label for="email" class="share__form__header-style share__form-label">Адрес почты</label>
+                  <input id="email" class="share__form-input--text" placeholder="Введите почту*" type="email" required>
               </p>
             </div>
           </fieldset>
@@ -110,16 +113,16 @@
             <div class="wrapper">
               <div class="share__form__header-style share__form-legend">С каким приложением путешествовали?</div>
               <ul class="share__form__app-list">
-                <li>
-                  <input type="radio" name="app" value="ios" id="ios-app">
+                <li class="share__form__app-item">
+                  <input class="share__form-input--radio" type="radio" name="app" value="ios" id="ios-app">
                   <label  class="share__form-label--radio" for="ios-app">Pink для iOS</label>
                 </li>
-                <li>
-                  <input type="radio" name="app" value="android" id="android-app">
+                <li class="share__form__app-item">
+                  <input class="share__form-input--radio" type="radio" name="app" value="android" id="android-app">
                   <label  class="share__form-label--radio" for="android-app">Pink на Android</label>
                 </li>
-                <li>
-                  <input type="radio" name="app" value="windows" id="windows-app">
+                <li class="share__form__app-item">
+                  <input class="share__form-input--radio" type="radio" name="app" value="windows" id="windows-app">
                   <label  class="share__form-label--radio" for="windows-app">Windows Phone</label>
                 </li>
               </ul>
@@ -129,44 +132,62 @@
             <div class="wrapper">
               <div class="share__form__header-style share__form-legend">Опишите свои эмоции</div>
               <label>
-                <textarea class="share__form-text-input share__form-textarea" placeholder="Можно прям в карсках, не стесняясь в выражениях"></textarea>
+                <textarea class="share__form-input--text share__form-textarea" placeholder="Можно прям в карсках, не стесняясь в выражениях"></textarea>
               </label>
             </div>
           </fieldset>
-          <div class="wrapper">
-            <button class="share__btn--submit">Отправить форму</button>
-            <p class="share__form-remark">
-              <span class="pink">*</span>-Обязательные для заполнения поля
-            </p>
+          <div class="share__form__remark-box">
+            <div class="wrapper">
+              <button class="share__btn--submit">Отправить форму</button>
+              <p class="share__form-remark">
+                <span class="pink">*</span>-Обязательные поля
+              </p>
+            </div>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <a href="index.html"><img class="page-footer__logo-img" src="http://placehold.it" alt="логотип Pink"></a>
+      <div class="wrapper">
+        <div class="page-footer__contacts">
+          <a href="index.html"><img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink"></a>
         </div>
-        <div class="page-footer__social social">
+        <div class="page-footer__social">
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://www.twitter.com/htmlacademy">twitter</a>
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="https://www.twitter.com/htmlacademy">twitter</a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">facebook</a>
+              <a class="page-footer__social-link page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#">youtube</a>
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="#">youtube</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="page-footer__copyright-img" src="http://placehold.it" alt="HTML Academy">
+              <img class="page-footer__copyright-img" src="img/htmlacademy.svg" alt="HTML Academy">
             </a>
         </div>
       </div>
     </footer>
+    <!-- main-nav-button and main-nav -->
+    <script>
+      var button = document.getElementById("main-nav-button");
+      var nav = document.querySelector(".page-header__main-nav");
+      if (window.innerWidth < 1200||
+          document.documentElement.clientWidth < 1200 ||
+          document.body.clientWidth < 1200 ||
+          document.body.offsetWidth < 1200) {
+            nav.classList.add("hidden");
+            button.addEventListener("click", function() {
+              nav.classList.toggle("hidden");
+              button.classList.toggle("page-header__main-nav-button--closed");
+              button.classList.toggle("page-header__main-nav-button--opened");
+            });
+          }
+    </script>
   </body>
 </html>
