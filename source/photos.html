@@ -10,9 +10,12 @@
     <header class="page-header">
       <div class="wrapper">
         <div class="page-header__upper-line">
-          <a class="page-header__logo-box" href="index.html">
-            <img class="page-header__logo-img" src="http://placehold.it" alt="Логотип Pink">
-          </a>
+          <div class="page-header__logo-line">
+            <a class="page-header__logo-link" href="index.html">
+              <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
+            </a>
+            <button id="main-nav-button" class="page-header__main-nav-button page-header__main-nav-button--closed"></button>
+          </div>
           <nav class="page-header__main-nav">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item">
@@ -35,7 +38,7 @@
     <main class="main photos">
       <section class="main-header">
         <div class="wrapper">
-          <h1 class="header--1">Фотографии пользователей</h1>
+          <h1 class="header--1 header--1--photos">Фотографии пользователей</h1>
         </div>
       </section>
       <div class="wrapper">
@@ -48,10 +51,12 @@
       <section class="gallery">
         <h2 class="hidden">Галерея</h2>
         <article class="gallery-article gallery-article--main">
-          <h3 class="gallery-article__day-photo-header">Панорама дня</h3>
-          <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__day-photo-img" src="http://www.placehold.it" alt="Фото дня"></a>
-          <div class="gallery-article__description">
-            <div class="wrapper">
+          <a class="gallery-article__big-photo-link" href="#">
+            <h3 class="gallery-article__day-photo-header">Панорама дня</h3>
+            <img class="gallery-article__big-photo" src="img/panorama-mobile@1x.jpg" alt="Фото дня">
+          </a>
+          <div class="wrapper">
+            <div class="gallery-article__description">
               <p class="gallery-article__photo-info">
                 <b class="gallery-article__author-name">Анна</b>
                 <span class="gallery-article__time">(5 минут назад)</span>
@@ -67,7 +72,9 @@
           <ul class="gallery-article-list">
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-car-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Левон</b>
@@ -80,7 +87,9 @@
             </li>
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-drumset-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Антон</b>
@@ -93,7 +102,9 @@
             </li>
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-window-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Борис</b>
@@ -106,7 +117,9 @@
             </li>
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-fair-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Сергей</b>
@@ -119,7 +132,9 @@
             </li>
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-pov-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Максим</b>
@@ -132,7 +147,9 @@
             </li>
             <li class="gallery-article-item">
               <article class="gallery-article">
-                <a class="gallery-article__big-photo-link" href="#"><img class="gallery-article__img" src="http://www.placehold.it" alt="фотография пользователя"></a>
+                <a class="gallery-article__big-photo-link" href="#">
+                  <img class="gallery-article__big-photo" src="img/photo-wing-mobile@1x.jpg" alt="фотография пользователя">
+                </a>
                 <div class="gallery-article__description">
                   <p class="gallery-article__photo-info">
                     <b class="gallery-article__author-name">Надежда</b>
@@ -150,7 +167,7 @@
         <div class="add-photo__intro">
           <div class="wrapper">
             <h2 class="hidden">Добавь свою фотографию</h2>
-            <p class="add-photo__intro">
+            <p class="add-photo__intro-slogan">
               Затмите их всех!
               <br>
               Выкладывайте все, что накопилось в телефоне!
@@ -160,58 +177,73 @@
         <form class="add-photo__form" method="post" action="http://echo.htmlacademy.ru">
           <div class="wrapper">
             <p class="add-photo__img-example">
-              <img class="add-photo__img-example-img" src="http://www.placehold.it"  alt="пример вашей фотографии">
+              <img class="add-photo__img-example-img" src="img/photo-road-mobile@1x.jpg"  alt="пример вашей фотографии">
             </p>
-            <ul class="add-photo__filters">
-              <li class="add-photo__filters-item">
-                <label>фильтр 1
-                  <input>
-                </label>
-              </li>
-              <li class="add-photo__filters-item">
-                <label>фильтр 2
-                  <input>
-                </label>
-              </li>
-              <li class="add-photo__filters-item">
-                <label>фильтр 3
-                  <input>
-                </label>
-              </li>
-            </ul>
-            <p class="add-photos__btns">
-              <button class="btn btn--add-photo btn--add-photo--active" type="submit">Запостить</button>
-              <button class="btn btn--add-photo" type="reset">Отмена</button>
-            </p>
+            <div class="add-photo__filters-section">
+              <ul class="add-photo__filters">
+                <li class="add-photo__filters-item">
+                  <label for="add-photo__filters-range--crop" class="add-photo__filters-label add-photo__filters-label--crop">фильтр 1</label>
+                  <input type="range" id="add-photo__filters-range--crop" class="add-photo__filters-range add-photo__filters-range--active">
+                </li>
+                <li class="add-photo__filters-item">
+                  <label for="add-photo__filters-range--fill" class="add-photo__filters-label add-photo__filters-label--fill">фильтр 2</label>
+                  <input type="range" id="add-photo__filters-range--fill" class="add-photo__filters-range">
+                </li>
+                <li class="add-photo__filters-item">
+                  <label for="add-photo__filters-range--contrast" class="add-photo__filters-label add-photo__filters-label--contrast">фильтр 3</label>
+                  <input type="range" id="add-photo__filters-range--contrast" class="add-photo__filters-range">
+                </li>
+              </ul>
+              <p class="add-photo__btns">
+                <button class="btn btn--add-photo btn--add-photo--active" type="submit">Запостить</button>
+                <button class="btn btn--add-photo" type="reset">Отмена</button>
+              </p>
+            </div>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="wrapper page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <a href="index.html"><img class="page-footer__logo-img" src="http://placehold.it" alt="логотип Pink"></a>
+      <div class="wrapper">
+        <div class="page-footer__contacts">
+          <a href="index.html"><img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink"></a>
         </div>
-        <div class="page-footer__social social">
+        <div class="page-footer__social">
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://www.twitter.com/htmlacademy">twitter</a>
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="https://www.twitter.com/htmlacademy">twitter</a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://www.facebook.com/htmlacademy">facebook</a>
+              <a class="page-footer__social-link page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#">youtube</a>
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="#">youtube</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright">
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="page-footer__copyright-img" src="http://placehold.it" alt="HTML Academy">
+              <img class="page-footer__copyright-img" src="img/htmlacademy.svg" alt="HTML Academy">
             </a>
         </div>
       </div>
     </footer>
+    <!-- main-nav-button and main-nav -->
+    <script>
+      var button = document.getElementById("main-nav-button");
+      var nav = document.querySelector(".page-header__main-nav");
+      if (window.innerWidth < 1200||
+          document.documentElement.clientWidth < 1200 ||
+          document.body.clientWidth < 1200 ||
+          document.body.offsetWidth < 1200) {
+            nav.classList.add("hidden");
+            button.addEventListener("click", function() {
+              nav.classList.toggle("hidden");
+              button.classList.toggle("page-header__main-nav-button--closed");
+              button.classList.toggle("page-header__main-nav-button--opened");
+            });
+          }
+    </script>
   </body>
 </html>
