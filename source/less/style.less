@@ -19,6 +19,11 @@
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
+@mobile-width: 320px;
+@mobile-wrapper-width: 280px;
+@tablet-width: 660px;620px;
+@desktop-width: 1200px;
+@desktop-wrapper-width: 1080px;
 @font--main: "OpenSans", Arial, sans-serif;
 @font--lighter: "OpenSans Lighter", Arial, sans-serif;
 @font--bold: "OpenSans Bold", Arial, sans-serif;
@@ -44,7 +49,7 @@ body {
   color: @text-color;
   font-size: 14px;
   line-height: 24px;
-  width: 320px;
+  width: @mobile-width;
 }
 
 .btn {
@@ -65,15 +70,28 @@ body {
 }
 
 .header--1 {
+  box-sizing: border-box;
   font-size: 24px;
   font-family: @font--lighter;
   font-weight: 300;
   text-align: center;
   color: @bg-color--1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid violet;
 }
 
 .hidden {
   display: none;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+}
+
+.main--index {
+  position: relative;
 }
 
 .pink {
@@ -81,7 +99,32 @@ body {
 }
 
 .wrapper {
-  width: 280px;
+  width: @mobile-wrapper-width;
   margin: 0 auto;
   outline: 1px dotted red;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: @tablet-width;
+  }
+
+  .header--1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .wrapper {
+    width: @tablet-wrapper-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: @desktop-width;
+  }
+
+  .wrapper {
+    width: @desktop-wrapper-width;
+  }
 }
