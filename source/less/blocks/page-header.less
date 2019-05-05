@@ -3,8 +3,14 @@
   padding: 0;
   background-color: @text-color;
   z-index: 1;
-  position: absolute;
+  position: relative;
+  top: 70px;
   width: @mobile-width;
+}
+
+.page-header__logo-img {
+  width: 74px;
+  height: 22px;
 }
 
 .page-header__logo-line {
@@ -15,15 +21,15 @@
 }
 
 .page-header__logo-link {
+  width: 74px;
+  height: 22px;
   display: flex;
   align-items: center;
 }
 
-.page-header__main-nav-button {
+.main-nav-button {
   outline: none;
   cursor: pointer;
-  width: 50px;
-  height: 30px;
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
@@ -31,22 +37,26 @@
   background-size: contain;
 }
 
-.page-header__main-nav-button--closed {
+.main-nav-button--closed {
   background-image: url("../../img/icon-menu-burger.svg");
+  width: 50px;
+  height: 30px;
 }
 
-.page-header__main-nav-button--opened {
+.main-nav-button--opened {
   background-image: url("../../img/icon-menu-cross.svg");
+  width: 20px;
+  height: 20px;
 }
 
-.page-header__main-nav-link {
+.main-nav-link {
   box-sizing: border-box;
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
   box-shadow:  0 -1px 0 0 rgb(75, 86, 92), 0 -2px 0 0 rgb(0, 0, 0);
-  padding: 19px 0;
+  padding: 15.5px 0;
   color: @bg-color--1;
   font-family: @font--bold;
   font-weight: 700;
@@ -62,42 +72,56 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: @tablet-width;
+    top: 110px;
+  }
+
+  .page-header__logo-img {
+    width: 150px;
+    height: 42px;
   }
 
   .page-header__logo-line {
     height: 110px;
   }
+
+  .page-header__logo-link {
+    width: 150px;
+    height: 42px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: @desktop-wrapper-width;
-    padding: 0 60px;
+    width: @desktop-width;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__main-nav {
+  .main-nav {
     outline: 1px solid yellow;
     display: block;
   }
 
-  .page-header__main-nav-button {
+  .main-nav-button {
     display: none;
   }
 
-  .page-header__main-nav-item {
+  .main-nav-item {
     margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
-  .page-header__main-nav-link {
+  .main-nav-link {
     text-transform: none;
     font-family: @font--main;
     font-weight: 400;
+    box-shadow: none;
   }
 
-  .page-header__main-nav-list {
+  .main-nav-list {
     height: 110px;
-    width: 710px;
+    width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;

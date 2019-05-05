@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
@@ -14,21 +15,21 @@
             <a class="page-header__logo-link">
               <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
             </a>
-            <button id="main-nav-button" class="page-header__main-nav-button page-header__main-nav-button--closed"></button>
+            <button id="main-nav-button" class="main-nav-button main-nav-button--closed"></button>
           </div>
-          <nav class="page-header__main-nav">
-            <ul class="page-header__main-nav-list">
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link header__main-nav-link--active">Главная</a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="main-nav-item">
+                <a class="main-nav-link header__main-nav-link--active">Главная</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="photos.html">Фотографии</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="photos.html">Фотографии</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="form.html">Конкурс</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -38,7 +39,7 @@
     <main class="main main--index">
       <section class="main-header main-header--with-hand">
         <div class="wrapper">
-          <h1 class="header--1 header--1--index">Взгляните на жизнь иначе!</h1>
+          <h1 class="header-main header-main--index">Взгляните на жизнь иначе!</h1>
         </div>
       </section>
       <section class="download-banner">
@@ -57,13 +58,9 @@
       <section class="promo">
         <section class="promo__intro">
           <div class="wrapper">
-            <h2 class="hidden">
-              Промо
-            </h2>
-            <p class="header--1">
+            <p class="header-main promo-header">
               Устали от серости мегаполиса?
-            </p>
-            <p class="header--1">
+            <br>
               Нам есть, что вам<br>предложить!
             </p>
           </div>
@@ -101,7 +98,7 @@
               <div class="promo__fact-description-box">
                 <h3 class="promo__fact-header">Эффект на 24 часа!</h3>
                 <p class="promo__fact-description">
-                  Британский ученые провели исследование и доказали, что положительный
+                  Британские ученые провели исследование и доказали, <span class="promo__fact-1--insert-space">SPACE</span> что положительный
                   эффект от использования приложения длится целые сутки!
                 </p>
                 <a class="promo__fact-link" href="#">Узнать больше об исследовании</a>
@@ -198,13 +195,13 @@
               <td class="prices-table__data">Розовый фильтр</td>
             </tr>
             <tr>
-              <td class="prices-table__filter">Розовый фильтр</td>
+              <td class="prices-table__filter">Смайлики</td>
               <td class="prices-table__data">Смайлики</td>
               <td class="prices-table__data">Смайлики</td>
               <td class="prices-table__data">Смайлики</td>
             </tr>
             <tr>
-              <td class="prices-table__filter">Розовый фильтр</td>
+              <td class="prices-table__filter">Комментарии</td>
               <td class="prices-table__data">Комментарии</td>
               <td class="prices-table__data">Комментарии</td>
               <td class="prices-table__data">Комментарии</td>
@@ -216,10 +213,8 @@
         <a class="contacts__map-link" href="#"><img class="contacts__map" src="img/bg-map-mobile.png" alt="Карта проезда"></a>
         <div class="contacts__text-content">
           <div class="wrapper">
-            <h2 class="header--1">
-              Остались вопросы?
-              <br>
-              Свяжитесь с нами!
+            <h2 class="header-main contacts-header">
+              Остались вопросы? Свяжитесь с нами!
             </h2>
             <ul class="contacts__contact-methods">
               <li class="contacts__contact-method">
@@ -227,12 +222,12 @@
                 <a class="contacts__address" href="tel:+78125556666">7 (812) 555 66 66</a>
               </li>
               <li class="contacts__contact-method">
-                <h3 class="contacts__contact-method-header">Приезжайте в гости:</h3>
-                <address class="contacts__address">ул. Большая Конюшенная, 19/8 </address>
-              </li>
-              <li class="contacts__contact-method">
                 <h3 class="contacts__contact-method-header">Пишите:</h3>
                 <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__contact-method">
+                <h3 class="contacts__contact-method-header">Приезжайте в гости:</h3>
+                <address class="contacts__address">ул. Большая Конюшенная, 19/8 </address>
               </li>
             </ul>
           </div>
@@ -242,7 +237,7 @@
     <footer class="page-footer">
       <div class="wrapper">
         <div class="page-footer__contacts">
-          <a href="index.html"><img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink"></a>
+          <a class="page-footer__logo-link" href="index.html"><img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink"></a>
         </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-list">
@@ -260,15 +255,15 @@
         <div class="page-footer__copyright copyright">
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="page-footer__copyright-img" src="img/htmlacademy.svg" alt="HTML Academy">
+              HTML Academy
             </a>
         </div>
       </div>
     </footer>
-  <!-- main-nav-button and main-nav -->
+  <!-- change main-nav-button and open/close main-nav -->
     <script>
       var button = document.getElementById("main-nav-button");
-      var nav = document.querySelector(".page-header__main-nav");
+      var nav = document.querySelector(".main-nav");
       if (window.innerWidth < 1200||
           document.documentElement.clientWidth < 1200 ||
           document.body.clientWidth < 1200 ||
@@ -276,8 +271,8 @@
             nav.classList.add("hidden");
             button.addEventListener("click", function() {
               nav.classList.toggle("hidden");
-              button.classList.toggle("page-header__main-nav-button--closed");
-              button.classList.toggle("page-header__main-nav-button--opened");
+              button.classList.toggle("main-nav-button--closed");
+              button.classList.toggle("main-nav-button--opened");
             });
           }
     </script>
