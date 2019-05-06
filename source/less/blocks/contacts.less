@@ -34,8 +34,15 @@ outline: 1px dashed blue;
   flex-direction: column;
 }
 
+.contacts__map {
+  width: @mobile-width;
+  height: auto;
+}
+
 .contacts__map-link {
   z-index: -1;
+  width: @mobile-width;
+  height: auto;
 }
 
 .contacts__text-content {
@@ -56,6 +63,14 @@ outline: 1px dashed blue;
     justify-content: center;
   }
 
+  .contacts__map {
+    width: @tablet-width;
+  }
+
+  .contacts__map-link {
+    width: @tablet-width;
+  }
+
   .contacts__text-content {
     width: @tablet-width;
   }
@@ -64,5 +79,17 @@ outline: 1px dashed blue;
 @media (min-width: @desktop-width) {
   .contacts__contact-method {
     width: 33.3%;
+  }
+
+  .contacts__map {
+    width: @desktop-width;
+  }
+
+  .contacts__map-link {
+    width: @desktop-width;
+  }
+
+  .contacts__text-content {
+    width: @desktop-width;
   }
 }

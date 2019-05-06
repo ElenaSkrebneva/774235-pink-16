@@ -12,7 +12,11 @@
         <div class="page-header__upper-line">
           <div class="page-header__logo-line">
             <a class="page-header__logo-link">
-              <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)"srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
+              </picture>
             </a>
             <button id="main-nav-button" class="page-header__main-nav-button page-header__main-nav-button--closed"></button>
           </div>
@@ -213,7 +217,13 @@
         </div>
       </section>
       <section class="contacts">
-        <a class="contacts__map-link" href="#"><img class="contacts__map" src="img/bg-map-mobile.png" alt="Карта проезда"></a>
+        <a class="contacts__map-link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet.jpg">
+            <img class="contacts__map" src="img/bg-map-mobile.png" alt="Карта проезда">
+          </picture>
+        </a>
         <div class="contacts__text-content">
           <div class="wrapper">
             <h2 class="header--1">
@@ -242,7 +252,12 @@
     <footer class="page-footer">
       <div class="wrapper">
         <div class="page-footer__contacts">
-          <a href="index.html"><img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink"></a>
+          <a class="page-footer__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink">
+            </picture>
+          </a>
         </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-list">

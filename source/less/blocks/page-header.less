@@ -7,6 +7,11 @@
   width: @mobile-width;
 }
 
+.page-header__logo-img {
+  width: 75px;
+  height: 22px;
+}
+
 .page-header__logo-line {
   display: flex;
   justify-content: space-between;
@@ -15,8 +20,11 @@
 }
 
 .page-header__logo-link {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 75px;
+  height: 22px;
 }
 
 .page-header__main-nav-button {
@@ -64,8 +72,18 @@
     width: @tablet-width;
   }
 
+  .page-header__logo-img {
+    width: 150px;
+    height: 39px;
+  }
+
   .page-header__logo-line {
     height: 110px;
+  }
+
+  .page-header__logo-link {
+    width: 150px;
+    height: 39px;
   }
 }
 
@@ -93,6 +111,7 @@
     text-transform: none;
     font-family: @font--main;
     font-weight: 400;
+    box-shadow: none;
   }
 
   .page-header__main-nav-list {
