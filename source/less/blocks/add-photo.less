@@ -1,13 +1,18 @@
+.add-photo {
+  outline: 2px solid green;
+}
+
 .add-photo__form {
   background-color: @bg-color--2;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .add-photo__filters {
   display: flex;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
   position: relative;
   outline: 1px solid blue;
 }
@@ -16,18 +21,23 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 33.3%;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .add-photo__filters-label {
   font-size: 0;
   display: inline-block;
-  width: 30px;
-  height: 30px;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
   &--contrast {
     background-image: url("../../img/icon-editor-contrast.svg");
+    background-size: 32px 32px;
   }
   &--crop {
     background-image: url("../../img/icon-editor-crop.svg");
@@ -43,7 +53,7 @@
   &--active {
     display: inline-block;
     position: absolute;
-    top: 40px;
+    top: 75px;
     width: @mobile-wrapper-width - 20px * 2;
     left: 20px;
   }
@@ -55,7 +65,7 @@
 }
 
 .add-photo__img-example {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   outline: 2px solid orange;
 }
 
@@ -64,26 +74,12 @@
   width: 100%;
 }
 
-.add-photo__intro {
-  line-height: 30px;
-  background-color: @bg-color--1;
-  padding-top: 55px;
-  padding-bottom: 70px;
-}
-
-.add-photo__intro-slogan {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
 .btn--add-photo {
   color: @text-color;
   border-color: @text-color;
   opacity: 0.1;
   width: @mobile-wrapper-width;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -96,21 +92,17 @@
 }
 
 @media(min-width: @tablet-width) {
-  .add-photo {
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
   .add-photo__btns {
     box-sizing: border-box;
     position: absolute;
+    width: 255px;
     bottom: 0;
+    background-color: yellow;
   }
 
   .add-photo__filters {
     display: block;
+    padding: 0;
   }
 
   .add-photo__filters-item {
@@ -143,10 +135,19 @@
   }
 
   .add-photo__filters-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
     position: relative;
     width: (@tablet-wrapper-width - 20px) / 2;
+  }
+
+  .add-photo__form {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .add-photo__img-example {
@@ -155,7 +156,8 @@
   }
 
   .btn--add-photo {
-    width: 100%;
+    width: 255px;
+    margin-bottom: 30px;
   }
 }
 

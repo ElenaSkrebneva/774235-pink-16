@@ -2,14 +2,16 @@
   color: @bg-color--1;
   border-color: @bg-color--1;
   box-sizing: border-box;
-  max-width: 250px;
+  width: @mobile-wrapper-width;
   margin-bottom: 30px;
 }
 
 .download-banner {
   background-color: rgb(29, 38, 49);
   color: @bg-color--1;
-  padding: 26px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -51,29 +53,49 @@
 .download-banner__apps-list-comment {
   font-family: @font--lighter;
   font-weight: 300;
+  font-size: 14px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .btn--download-banner {
     max-width: 300px;
     width: 300px;
+    margin-bottom: 45px;
   }
 
   .download-banner {
     position: absolute;
     width: 300px;
-    top: 375px;
+    top: 307px;
     left: (@tablet-width - @tablet-wrapper-width) / 2;
     background-color: transparent;
     .wrapper {
       width: 300px;
     }
   }
+
+  .download-banner__apps-list {
+    margin-bottom: 35px;
+  }
+
+  .download-banner__apps-list-comment {
+    font-size: 18px;
+    padding: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .btn--download-banner {
+    margin-bottom: 68px;
+  }
+
   .download-banner {
     left:  (@desktop-width - @desktop-wrapper-width) / 2;
-    top: 450px;
+    top: 420px;
+  }
+
+  .download-banner__apps-list {
+    margin-bottom: 50px;
   }
 }
