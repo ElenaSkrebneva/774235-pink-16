@@ -1,22 +1,25 @@
 .contacts {
 position: relative;
 outline: 1px dashed blue;
-  .header--1 {
-    color: @text-color;
-    margin-bottom: 0;
-    position: relative;
-  }
+overflow: hidden;
 }
 
 .contacts__address {
+  display: block;
   color: @pink;
   font-family: @font--lighter;
   font-weight: 300;
   font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .contacts__contact-method {
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .contacts__contact-method-header {
@@ -25,7 +28,6 @@ outline: 1px dashed blue;
   font-weight: 700;
   color: rgb(0, 0, 0);
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .contacts__contact-methods {
@@ -34,33 +36,56 @@ outline: 1px dashed blue;
   flex-direction: column;
 }
 
+.contacts-header {
+  color: @text-color;
+  margin-bottom: 0;
+}
+
 .contacts__map {
   width: @mobile-width;
-  height: auto;
+  margin-top: -35px;
 }
 
 .contacts__map-link {
   z-index: -1;
   width: @mobile-width;
-  height: auto;
 }
 
 .contacts__text-content {
   position: absolute;
   width: @mobile-width;
+  padding-top: 16px;
   top: 0;
   background-color: @bg-color--1;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    .header-main {
+      margin: 0;
+    }
+  }
+
   .contacts__contact-method {
     width: 50%;
+    padding: 0 20px;
+    outline: 2px solid black;
+    margin-top: 30px;
+  }
+
+  .contacts__contact-method-header {
+    margin-bottom: 5px;
   }
 
   .contacts__contact-methods {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15px;
+  }
+
+  .contacts-header {
+    padding: 0 40px;
   }
 
   .contacts__map {
@@ -73,12 +98,38 @@ outline: 1px dashed blue;
 
   .contacts__text-content {
     width: @tablet-width;
+    background-color: yellow;
+    padding: 0;
+    padding-top: 45px;
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__contact-method {
     width: 33.3%;
+    margin-top: 55px;
+    &:first-child {
+      order: 0;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 1;
+    }
+  }
+
+  .contacts__contact-methods {
+    margin-top: 0;
+  }
+
+  .contacts__contact-method-header {
+    margin-bottom: 20px;
+  }
+
+  .contacts-header {
+    padding: 0 200px;
   }
 
   .contacts__map {
@@ -91,5 +142,6 @@ outline: 1px dashed blue;
 
   .contacts__text-content {
     width: @desktop-width;
+    padding-top: 100px;
   }
 }

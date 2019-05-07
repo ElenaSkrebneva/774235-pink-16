@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
@@ -15,41 +16,39 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
                 <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
+                <img class="page-header__logo-img" width="74" height="22" src="img/logo-pink-white-mobile.svg" alt="Pink логотип">
               </picture>
             </a>
-            <button id="main-nav-button" class="page-header__main-nav-button page-header__main-nav-button--closed"></button>
+            <button id="main-nav-button" class="main-nav-button main-nav-button--closed"></button>
           </div>
-          <nav class="page-header__main-nav">
-            <ul class="page-header__main-nav-list">
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="index.html">Главная</a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="index.html">Главная</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link header__main-nav-link--active">Фотографии</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link header__main-nav-link--active">Фотографии</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="form.html">Конкурс</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="form.html">Конкурс</a>
               </li>
-              <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <li class="main-nav-item">
+                <a class="main-nav-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main class="main photos">
+    <main class="main">
       <section class="main-header">
         <div class="wrapper">
-          <h1 class="header--1 header--1--photos">Фотографии пользователей</h1>
+          <h1 class="header-main header-main--photos">Фотографии пользователей</h1>
         </div>
       </section>
       <div class="wrapper">
-        <p class="photos__intro">
-          Взгляните на фотографии, которые выкладывают наши пользователи!
-          <br>
-          Видите, как не хватает ваших?
+        <p class="intro intro--photos">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
       </div>
       <section class="gallery">
@@ -58,9 +57,9 @@
           <a class="gallery-article__big-photo-link" href="#">
             <h3 class="gallery-article__day-photo-header">Панорама дня</h3>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img class="gallery-article__big-photo" src="img/panorama-mobile@1x.jpg" alt="Фото дня">
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="gallery-article__big-photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото дня">
             </picture>
           </a>
           <div class="wrapper">
@@ -70,9 +69,9 @@
                 <span class="gallery-article__time">(5 минут назад)</span>
               </p>
               <p class="gallery-article__comment">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
+              <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">215</span></button>
             </div>
           </div>
         </article>
@@ -82,9 +81,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-car-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -93,7 +92,7 @@
                     <span class="gallery-article__time">(5 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Вчера он на луну летат, сегодня в руки к нам попал.</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">356</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">356</span></button>
                 </div>
               </article>
             </li>
@@ -101,9 +100,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-drumset-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -112,7 +111,7 @@
                     <span class="gallery-article__time">(12 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Соседи будут рады!</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">666</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">666</span></button>
                 </div>
               </article>
             </li>
@@ -120,9 +119,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-window-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -131,7 +130,7 @@
                     <span class="gallery-article__time">(20 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">215</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">215</span></button>
                 </div>
               </article>
             </li>
@@ -139,9 +138,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-fair-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -150,7 +149,7 @@
                     <span class="gallery-article__time">(25 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Самая кубанская в мире!</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">4</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">4</span></button>
                 </div>
               </article>
             </li>
@@ -158,9 +157,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-pov-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -169,7 +168,7 @@
                     <span class="gallery-article__time">(40 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Где снег-то?</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">150</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">150</span></button>
                 </div>
               </article>
             </li>
@@ -177,9 +176,9 @@
               <article class="gallery-article">
                 <a class="gallery-article__big-photo-link" href="#">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                    <img class="gallery-article__big-photo" src="img/photo-wing-mobile@1x.jpg" alt="фотография пользователя">
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="gallery-article__big-photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фотография пользователя">
                   </picture>
                 </a>
                 <div class="gallery-article__description">
@@ -188,7 +187,7 @@
                     <span class="gallery-article__time">(45 часов назад)</span>
                   </p>
                   <p class="gallery-article__comment">Всем GM и взаимные лайки!</p>
-                  <button class="gallery-article__likes">Нравится <span class="gallery-article__likes-number">2560</span></button>
+                  <button class="gallery-article__likes">Нравится: <span class="gallery-article__likes-number">2560</span></button>
                 </div>
               </article>
             </li>
@@ -196,23 +195,20 @@
         </div>
       </section>
       <section class="add-photo">
-        <div class="add-photo__intro">
-          <div class="wrapper">
-            <h2 class="hidden">Добавь свою фотографию</h2>
-            <p class="add-photo__intro-slogan">
-              Затмите их всех!
-              <br>
-              Выкладывайте все, что накопилось в телефоне!
-            </p>
-          </div>
+        <div class="wrapper">
+          <p class="intro">
+          Затмите их всех!
+          <br>
+          Выкладывайте все, что накопилось в телефоне!
+          </p>
         </div>
         <form class="add-photo__form" method="post" action="http://echo.htmlacademy.ru">
           <div class="wrapper">
             <p class="add-photo__img-example">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-                <img class="gallery-article__big-photo" src="img/photo-road-mobile@1x.jpg" alt="фотография пользователя">
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="add-photo__img-example-img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фотография пользователя">
               </picture>
             </p>
             <div class="add-photo__filters-section">
@@ -245,7 +241,7 @@
           <a class="page-footer__logo-link" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-              <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink">
+              <img class="page-footer__logo-img" width="145" height="40" src="img/logo-pink-blue-mobile.svg" alt="логотип Pink">
             </picture>
           </a>
         </div>
@@ -265,15 +261,15 @@
         <div class="page-footer__copyright">
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="page-footer__copyright-img" src="img/htmlacademy.svg" alt="HTML Academy">
+              HTML Academy
             </a>
         </div>
       </div>
     </footer>
-    <!-- main-nav-button and main-nav -->
+    <!-- change main-nav-button and open/close main-nav -->
     <script>
       var button = document.getElementById("main-nav-button");
-      var nav = document.querySelector(".page-header__main-nav");
+      var nav = document.querySelector(".main-nav");
       if (window.innerWidth < 1200||
           document.documentElement.clientWidth < 1200 ||
           document.body.clientWidth < 1200 ||
@@ -281,10 +277,22 @@
             nav.classList.add("hidden");
             button.addEventListener("click", function() {
               nav.classList.toggle("hidden");
-              button.classList.toggle("page-header__main-nav-button--closed");
-              button.classList.toggle("page-header__main-nav-button--opened");
+              button.classList.toggle("main-nav-button--closed");
+              button.classList.toggle("main-nav-button--opened");
             });
           }
+    </script>
+    <script>
+    var dayPhoto = document.getElementById("day-photo");
+    /*var windowWidth = window.innerWidth < 1200||
+        document.documentElement.clientWidth < 1200 ||
+        document.body.clientWidth < 1200 ||
+        document.body.offsetWidth < 1200;*/
+    var mobileWidth = 320;
+    var tabletWidth = 660;
+    if (document.body.clientwidth > 400)  {
+      dayPhoto.src = "img/panorama-tablet@1x.jpg";
+    }
     </script>
   </body>
 </html>
