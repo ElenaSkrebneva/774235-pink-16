@@ -1,3 +1,12 @@
+.logo-pink-blue {
+  &-mobile {
+    display: block;
+  }
+  &-desktop {
+    display: none;
+  }
+}
+
 .page-footer {
   outline: 2px solid yellow;
   padding-top: 40px;
@@ -22,21 +31,28 @@
 }
 
 .page-footer__copyright-link {
-  display: inline-sblock;
+  display: inline-block;
   font-size: 0;
   padding: 0;
   margin: 0;
   width: 27px;
   height: 35px;
-  background-image: url("../../img/htmlacademy.svg");
-  background-size: 42px 55px;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.page-footer__copyright-svg {
+  fill: @pink;
+  &:hover {
+    fill: @text-color;
+  }
+  &:active {
+    fill: rgb(191, 192, 196);
+  }
 }
 
 .page-footer__logo-img {
   width: 145px;
   height: 40px;
+  fill: @text-color;
 }
 
 .page-footer__logo-link {
@@ -44,6 +60,17 @@
   display: inline-block;
   width: 145px;
   height: 40px;
+  &:hover {
+    .page-footer__logo-img {
+      fill: @pink;
+    }
+  }
+  &:active {
+    .page-footer__logo-img {
+      fill: @text-color;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__social-item {
@@ -54,24 +81,21 @@
 }
 
 .page-footer__social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
-  border: 4px solid rgb(235, 235, 235);
+  border: 4px solid @border-color;
   border-radius: 50%;
   padding: 0;
   margin: 0;
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+  &:hover {
+    border: 4px solid @text-color;
   }
-  &--fb {
-    background-image: url("../../img/icon-facebook.svg");
-  }
-  &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -79,6 +103,10 @@
   display: flex;
   justify-content: center;
   outline: 1px solid teal;
+}
+
+.page-footer__social-svg {
+  fill: @pink;
 }
 
 @media (min-width: @tablet-width) {
@@ -94,5 +122,16 @@
 
   .page-footer__social {
     padding-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-pink-blue {
+    &-mobile {
+      display: none;
+    }
+    &-desktop {
+      display: block;
+    }
   }
 }

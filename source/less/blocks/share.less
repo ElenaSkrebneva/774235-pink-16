@@ -1,5 +1,6 @@
 .share__btn--submit {
   background-color: rgb(41, 171, 109);
+  cursor: pointer;
   font-family: @font--bold;
   border: none;
   border-radius: 3px;
@@ -9,6 +10,16 @@
   padding: 20px;
   width: 100%;
   margin-bottom: 40px;
+  &:hover {
+    background-color: rgb(29, 155, 94);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: @border-color;
+    cursor: auto;
+  }
 }
 
 .share__form {
@@ -79,10 +90,16 @@
   box-sizing: border-box;
   display: block;
   padding: 20.5px;
-  outline: none;
   border: 2px solid @bg-color--2;
+  outline: none;
   border-radius: 3px;
   width: 100%;
+  &:hover {
+    border: 2px solid @text-color;
+  }
+  &:focus {
+    border: 2px solid @pink;
+  }
 }
 
 .share__form-input--text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -121,7 +138,7 @@
   }
 }
 
-.share__form__item--achievement {
+.share__form-item--achievement {
   padding-left: 69px;
   padding-top: 42px;
   padding-bottom: 10px;
@@ -130,7 +147,7 @@
   }
 }
 
-.share__form__item--app {
+.share__form-item--app {
   padding-left: 69px;
   padding-top: 37px;
   padding-bottom: 9px;
@@ -157,13 +174,20 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    border: 2px solid rgb(229, 229, 229);
+    border: 2px solid @border-color;
+    border-radius: 3px;
     background-color: rgb(255, 255, 255);
     top: -5px;
     left: -38px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+  &:hover::before {
+    border: 2px solid @text-color;
+  }
+  &:active::before {
+    border: 2px solid @pink;
   }
 }
 
@@ -258,7 +282,7 @@
     }
   }
 
-  .share__form__item--achievement {
+  .share__form-item--achievement {
     outline: 1px solid black;
     padding: 37px 0 15px 90px;
   }
@@ -278,6 +302,40 @@
     }
     .share__form-label {
       padding-left: 50px;
+    }
+  }
+
+  .share__form-item--phone {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @border-color;
+      width: 57px;
+      height: 57px;
+      right: 32px;
+      top: 2px;
+      background-image: url("../../img/icon-phone.svg");
+      background-position: center;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .share__form-item--email {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @border-color;
+      width: 57px;
+      height: 57px;
+      right: 32px;
+      top: 2px;
+      background-image: url("../../img/icon-mail.svg");
+      background-position: center;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
     }
   }
 
@@ -365,6 +423,13 @@
     }
   }
 
+  .share__form__fieldset--contacts {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   .share__form__fieldset--sender {
     display: inline-block;
     width: @desktop-width / 2;
@@ -381,6 +446,23 @@
 
   .share__form-input--radio:checked + .share__form-label--radio::after {
     left: -14px;
+  }
+
+  .share__form-item--contacts {
+    width: 434px;
+    margin: 0;
+    &::after {
+      width: 62px;
+      height: 62px;
+    }
+    .share__form-input--text {
+      width: 372px;
+    }
+  }
+  .share__form-item {
+    &--contacts + &--contacts {
+      margin-top: 0;
+    }
   }
 
   .share__form-label {
