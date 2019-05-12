@@ -1,3 +1,12 @@
+.logo-pink-blue {
+  &-mobile {
+    display: block;
+  }
+  &-desktop {
+    display: none;
+  }
+}
+
 .page-footer {
   outline: 2px solid yellow;
   padding-top: 40px;
@@ -12,44 +21,81 @@
 }
 
 .page-footer__copyright {
+  font-size: 14px;
   line-height: 18px;
   outline: 1px solid black;
   display: flex;
+  width: 130px;
   align-items: center;
+  justify-content: space-between;
 }
 
-.page-footer__copyright-img {
-  width: 30px;
+.page-footer__copyright-link {
+  display: inline-block;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 27px;
+  height: 35px;
+}
+
+.page-footer__copyright-svg {
+  fill: @pink;
+  &:hover {
+    fill: @text-color;
+  }
+  &:active {
+    fill: rgb(191, 192, 196);
+  }
+}
+
+.page-footer__logo-svg {
+  width: 145px;
   height: 40px;
-  outline: 1px solid yellow;
+  fill: @text-color;
+}
+
+.page-footer__logo-link {
+  outline: 1px solid blue;
+  display: inline-block;
+  width: 145px;
+  height: 40px;
+  &:hover {
+    .page-footer__logo-svg {
+      fill: @pink;
+    }
+  }
+  &:active {
+    .page-footer__logo-svg {
+      fill: @text-color;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__social-item {
-  margin-left: 20px;
+  margin-left: 10px;
   &:first-child {
     margin-left: 0;
   }
 }
 
 .page-footer__social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
-  border: 4px solid rgb(235, 235, 235);
+  border: 4px solid @border-color;
   border-radius: 50%;
   padding: 0;
   margin: 0;
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+  &:hover {
+    border: 4px solid @text-color;
   }
-  &--fb {
-    background-image: url("../../img/icon-facebook.svg");
-  }
-  &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -59,13 +105,33 @@
   outline: 1px solid teal;
 }
 
+.page-footer__social-svg {
+  fill: @pink;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
+    padding-top: 20px;
     .wrapper {
       min-height: 85px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+
+  .page-footer__social {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-pink-blue {
+    &-mobile {
+      display: none;
+    }
+    &-desktop {
+      display: block;
     }
   }
 }

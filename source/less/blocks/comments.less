@@ -6,7 +6,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 43px;
 }
 
 .comment__commentator {
@@ -37,11 +37,11 @@
   .wrapper {
     position: relative;
     padding-bottom: 100px;
-    overflow: hidden;
+    overflow: ;
   }
 }
 
-.comments__arrows {
+.comments__arrow {
   display: none;
 }
 
@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 53px;
+  bottom: 55px;
   right: @mobile-wrapper-width /2 - 30px;
 }
 
@@ -65,11 +65,17 @@
   cursor: pointer;
   width: 7px;
   height: 7px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(191, 196, 202);
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 18px;
   &:first-child {
     margin-left: 0;
+  }
+  &:hover {
+    background-color: rgb(122, 132, 142);
+  }
+  &:active {
+    background-color: rgb(236, 237, 239);
   }
 }
 
@@ -83,7 +89,7 @@
 #comments__fake-btn--1:checked ~ .comments__dots label[for="comments__fake-btn--1"],
 #comments__fake-btn--2:checked ~ .comments__dots label[for="comments__fake-btn--2"],
 #comments__fake-btn--3:checked ~ .comments__dots label[for="comments__fake-btn--3"] {
-  background-color: @bg-color--2;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0 0 3px @text-color;
 }
 #comments__fake-btn--1:checked ~ .comments__comments {
@@ -102,6 +108,8 @@
   .comment {
     flex-direction: column-reverse;
     width: @tablet-wrapper-width;
+    margin-top: 5px;
+    outline: 3px solid blue;
   }
 
   .comment__commentator {
@@ -110,6 +118,15 @@
 
   .comment__commentator-info {
     display: block;
+  }
+
+  .comment__commentator-name {
+    font-size: 20px;
+  }
+
+  .comment__content {
+    font-size: 18px;
+    margin-bottom: 33px;
   }
 
   .comments__comments {
@@ -134,6 +151,10 @@
 }
 
 @media (min-width: @desktop-width)  {
+  .comment__commentator-name {
+    font-size: 24px;
+  }
+
   .comment {
     width: @desktop-wrapper-width;
     padding-left: 115px;
@@ -141,37 +162,42 @@
   }
 
   .comments {
-    padding-top: 150px;
+    padding-top: 190px;
+    padding-bottom: 125px;
     .wrapper {
-      padding-bottom: 50px;
+      padding-bottom: 0;
       position: relative;
     }
   }
 
   .comments__arrow {
+    display: block;
     cursor: pointer;
     position: absolute;
-    outline: none;
-    border: none;
+    box-sizing: border-box;
     background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
+    z-index: 1;
     width: 26px;
-    height: 36px;
-    top: 50px;
+    height: 26px;
+    top: 33px;
+    transform: rotate(45deg);
     &--back {
-      left: 0;
-      background-image: url("../../img/icon-review-arrow-left.svg");
+      left: 5px;
+      border-left: 2px solid rgb(191, 195, 198);
+      border-bottom: 2px solid rgb(191, 195, 198);
     }
     &--forward {
       left: auto;
-      background-image: url("../../img/icon-review-arrow-right.svg");
-      right: 0;
+      right: 5px;
+      border-right: 2px solid rgb(191, 195, 198);
+      border-top: 2px solid rgb(191, 195, 198);
     }
-  }
-
-  .comments__arrows {
-    display: block;
+    &:hover {
+      border-color: @text-color;
+    }
+    &:active {
+      border-color: @border-color;
+    }
   }
 
   .comments__comments {
