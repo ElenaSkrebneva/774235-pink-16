@@ -2026,7 +2026,7 @@
 .page-header--open {
   background-color: #283645;
 }
-.page-header__logo-img {
+.page-header__logo-svg {
   width: 74px;
   height: 22px;
   outline: 1px solid yellow;
@@ -2055,10 +2055,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.page-header__logo-link:hover .page-header__logo-img {
+.page-header__logo-link:hover .page-header__logo-svg {
   fill: #d22856;
 }
-.page-header__logo-link:active .page-header__logo-img {
+.page-header__logo-link:active .page-header__logo-svg {
   fill: #ffffff;
   opacity: 0.3;
 }
@@ -2148,7 +2148,7 @@
     width: 660px;
     top: 110px;
   }
-  .page-header__logo-img {
+  .page-header__logo-svg {
     width: 150px;
     height: 42px;
   }
@@ -2289,7 +2289,7 @@
 .page-footer__copyright-svg:active {
   fill: #bfc0c4;
 }
-.page-footer__logo-img {
+.page-footer__logo-svg {
   width: 145px;
   height: 40px;
   fill: #283645;
@@ -2300,10 +2300,10 @@
   width: 145px;
   height: 40px;
 }
-.page-footer__logo-link:hover .page-footer__logo-img {
+.page-footer__logo-link:hover .page-footer__logo-svg {
   fill: #d22856;
 }
-.page-footer__logo-link:active .page-footer__logo-img {
+.page-footer__logo-link:active .page-footer__logo-svg {
   fill: #283645;
   opacity: 0.3;
 }

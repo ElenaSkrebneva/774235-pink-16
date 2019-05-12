@@ -13,7 +13,8 @@
         <div class="page-header__upper-line">
           <div class="page-header__logo-line">
             <a class="page-header__logo-link">
-              <svg class="page-header__logo-img" width="74" height="22">
+              <svg class="page-header__logo-svg" width="74" height="22" aria-labelledby="header-logo">
+                <title id="header-logo">Логотип Pink</title>
                 <g class="logo-pink-white-mobile">
                   <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -94,7 +95,7 @@
             <li class="download-banner__app">
               <a class="download-banner__app-link download-banner__app-link--apple" href="#">
                 Apple
-                <svg class="download-banner__app-svg" width="50" height="60">
+                <svg class="download-banner__app-svg" width="50" height="60" viewbox="0 0 50 60" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/logos.svg#logo-apple"></use>
                 </svg>
               </a>
@@ -102,7 +103,7 @@
             <li class="download-banner__app">
               <a class="download-banner__app-link download-banner__app-link--android" href="#">
                 Android
-                <svg class="download-banner__app-svg" width="50" height="60">
+                <svg class="download-banner__app-svg" width="50" height="60" viewbox="0 0 50 60" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/logos.svg#logo-android"></use>
                 </svg>
               </a>
@@ -110,7 +111,7 @@
             <li class="download-banner__app">
               <a class="download-banner__app-link download-banner__app-link--microsoft" href="#">
                 Microsoft
-                <svg class="download-banner__app-svg" width="50" height="60">
+                <svg class="download-banner__app-svg" width="50" height="60" viewbox="0 0 50 60" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/logos.svg#logo-microsoft"></use>
                 </svg>
               </a>
@@ -276,6 +277,9 @@
       <section class="contacts">
         <a class="contacts__map-link" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile.webp 1x, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="contacts__map" src="img/bg-map-mobile.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта проезда">
@@ -308,7 +312,8 @@
       <div class="wrapper">
         <div class="page-footer__contacts">
           <a class="page-footer__logo-link" href="index.html">
-            <svg class="page-footer__logo-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <svg class="page-footer__logo-svg" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" aria-labelledby="footer-logo">
+              <title id="footer-logo">Логотип Pink</title>
               <g class="logo-pink-blue-mobile">
                 <g>
                   <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -355,7 +360,7 @@
             <li class="page-footer__social-item">
               <a class="page-footer__social-link page-footer__social-link--twitter" href="https://www.twitter.com/htmlacademy">
                 twitter
-                <svg class="page-footer__social-svg" width="16" height="14">
+                <svg class="page-footer__social-svg" width="16" height="14" viewbox="0 0 16 14" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/social.svg#twitter"></use>
                 </svg>
               </a>
@@ -363,7 +368,7 @@
             <li class="page-footer__social-item">
               <a class="page-footer__social-link page-footer__social-link--fb" href="https://www.facebook.com/htmlacademy">
                 facebook
-                <svg class="page-footer__social-svg" width="8" height="17">
+                <svg class="page-footer__social-svg" width="8" height="17" viewbox="0 0 8 17" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/social.svg#facebook"></use>
                 </svg>
               </a>
@@ -371,7 +376,7 @@
             <li class="page-footer__social-item">
               <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
                 youtube
-                <svg class="page-footer__social-svg" width="13" height="13">
+                <svg class="page-footer__social-svg" width="13" height="13" viewbox="0 0 13 13" aria-hidden="true" role="presentation" focusable="false">
                   <use xlink:href="img/social.svg#youtube"></use>
                 </svg>
               </a>
@@ -382,7 +387,7 @@
             Разработано
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
-              <svg class="page-footer__copyright-svg" width="27" height="35">
+              <svg class="page-footer__copyright-svg" width="27" height="35" viewbox="0 0 27 35" aria-hidden="true" role="presentation" focusable="false">
                 <use xlink:href="img/logos.svg#logo-htmlacademy"></use>
               </svg>
             </a>
