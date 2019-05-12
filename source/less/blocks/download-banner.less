@@ -1,9 +1,17 @@
 .btn--download-banner {
   color: @bg-color--1;
   border-color: @bg-color--1;
+  background-color: transparent;
   box-sizing: border-box;
   width: @mobile-wrapper-width;
   margin-bottom: 30px;
+  &:hover {
+    color: @pink;
+    background-color: @bg-color--1;
+  }
+  &:active {
+    color: rgba(210, 41, 86, 0.3);
+  }
 }
 
 .download-banner {
@@ -29,18 +37,6 @@
   padding: 0;
   width: 50px;
   height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--apple {
-    background-image: url("../../img/logo-apple.svg");
-  }
-  &--android {
-    background-image: url("../../img/logo-android.svg");
-  }
-  &--microsoft {
-    background-image: url("../../img/logo-microsoft.svg");
-  }
 }
 
 .download-banner__apps-list {

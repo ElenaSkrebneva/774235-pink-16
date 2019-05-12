@@ -15,6 +15,16 @@ overflow: hidden;
   margin: 0;
   font-style: normal;
   text-decoration: none;
+  &--email {
+    &:hover {
+      color: @text-color;
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
 }
 
 .contacts__contact-method {

@@ -42,11 +42,17 @@
   cursor: pointer;
   width: 7px;
   height: 7px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(191, 196, 202);
   border-radius: 50%;
   margin-left: 20px;
   &:first-child {
     margin-left: 0;
+  }
+  &:hover {
+    background-color: rgb(122, 132, 142);
+  }
+  &:active {
+    background-color: rgb(236, 237, 239);
   }
 }
 
@@ -61,7 +67,7 @@
 #prices-table__fake-btn--2:checked ~ .prices-table__dots label[for="prices-table__fake-btn--2"],
 #prices-table__fake-btn--3:checked ~ .prices-table__dots label[for="prices-table__fake-btn--3"] {
   background-color: @bg-color--2;
-  box-shadow: 0 0 0 2px @text-color;
+  box-shadow: 0 0 0 3px @text-color;
 }
 #prices-table__fake-btn--1:checked ~ .prices-table {
   transform: translateX(-280px);
