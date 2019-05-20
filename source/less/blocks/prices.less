@@ -1,6 +1,7 @@
 .prices {
   background-color: @bg-color--2;
   padding-top: 80px;
+
   .wrapper {
     position: relative;
     padding-bottom: 100px;
@@ -29,6 +30,7 @@
   max-width: @mobile-wrapper-width;
   background-repeat: no-repeat;
   background-position: 230px center;
+
   &.comments--prices::before {
     content: "Комментарии ";
     font-size: 14px;
@@ -71,6 +73,7 @@
   background-color: rgb(191, 196, 202);
   border-radius: 50%;
   margin-left: 20px;
+
   &:first-child {
     margin-left: 0;
   }
@@ -85,28 +88,28 @@
 }
 
 
-#prices-table__fake-btn--1,
-#prices-table__fake-btn--2,
-#prices-table__fake-btn--3 {
+.prices-table__fake-btn--1,
+.prices-table__fake-btn--2,
+.prices-table__fake-btn--3 {
   display: none;
 }
 
-#prices-table__fake-btn--1:checked ~ .prices-table__dots label[for="prices-table__fake-btn--1"],
-#prices-table__fake-btn--2:checked ~ .prices-table__dots label[for="prices-table__fake-btn--2"],
-#prices-table__fake-btn--3:checked ~ .prices-table__dots label[for="prices-table__fake-btn--3"] {
+.prices-table__fake-btn--1:checked ~ .prices-table__dots label[for="prices-table__fake-btn--1"],
+.prices-table__fake-btn--2:checked ~ .prices-table__dots label[for="prices-table__fake-btn--2"],
+.prices-table__fake-btn--3:checked ~ .prices-table__dots label[for="prices-table__fake-btn--3"] {
   background-color: @bg-color--2;
   box-shadow: 0 0 0 3px @text-color;
 }
 
-#prices-table__fake-btn--1:checked ~ .prices-table {
+.prices-table__fake-btn--1:checked ~ .prices-table {
   transform: translateX(-280px);
 }
 
-#prices-table__fake-btn--2:checked ~ .prices-table {
+.prices-table__fake-btn--2:checked ~ .prices-table {
   transform: translateX(-280px * 2);
 }
 
-#prices-table__fake-btn--3:checked ~ .prices-table {
+.prices-table__fake-btn--3:checked ~ .prices-table {
   transform: translateX(-280px * 3);
 }
 
@@ -169,6 +172,7 @@
   .prices {
     padding-top: 90px;
     padding-bottom: 65px;
+
     .wrapper {
       padding-bottom: 0;
     }
@@ -183,6 +187,7 @@
     font-size: 0;
     padding: 0;
     background-position: center center;
+
     &::before {
       display: none;
     }
@@ -201,15 +206,15 @@
     display: none;
   }
 
-  #prices-table__fake-btn--1:checked ~ .prices-table {
+  .prices-table__fake-btn--1:checked ~ .prices-table {
     transform: translateX(0);
   }
 
-  #prices-table__fake-btn--2:checked ~ .prices-table {
+  .prices-table__fake-btn--2:checked ~ .prices-table {
     transform: translateX(0);
   }
 
-  #prices-table__fake-btn--3:checked ~ .prices-table {
+  .prices-table__fake-btn--3:checked ~ .prices-table {
     transform: translateX(0);
   }
 
