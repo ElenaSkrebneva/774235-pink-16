@@ -1,0 +1,170 @@
+.logo-pink-blue {
+  &-mobile {
+    display: block;
+  }
+
+  &-desktop {
+    display: none;
+  }
+}
+
+.page-footer {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .wrapper {
+    min-height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  width: 27px;
+  height: 35px;
+  color: @pink;
+  fill: currentColor;
+
+  &:hover {
+    color: @text-color;
+  }
+
+  &:active {
+    color: rgb(191, 192, 196);
+  }
+}
+
+.page-footer__logo-svg {
+  width: 145px;
+  height: 40px;
+}
+
+.page-footer__logo-link {
+  display: inline-block;
+  width: 145px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  fill: currentColor;
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-item {
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.page-footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 4px solid @border-color;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+
+  &:hover {
+    border: 4px solid @text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__social-svg {
+  fill: @pink;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    .page-footer__social {
+      padding-right: 10px;
+    }
+
+    .page-footer__logo-section {
+      padding-bottom: 10px;
+    }
+
+    .wrapper {
+      min-height: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo-pink-blue {
+    &-mobile {
+      display: none;
+    }
+
+    &-desktop {
+      display: block;
+    }
+  }
+
+  .page-footer {
+    &--form {
+      padding-top: 20px;
+
+      .page-footer__logo-section {
+        padding-bottom: 20px;
+      }
+    }
+
+    &--index {
+      padding-top: 65px;
+
+      .page-footer__logo-section {
+        padding-bottom: 10px;
+      }
+    }
+
+    &--photos {
+      padding-top: 30px;
+    }
+  }
+
+  .page-footer__social {
+    padding-left: 20px;
+  }
+}
