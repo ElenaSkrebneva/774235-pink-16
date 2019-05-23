@@ -5,11 +5,9 @@
 }
 
 .add-photo__form {
+  background-color: @bg-color--2;
   padding-top: 20px;
   padding-bottom: 40px;
-  .wrapper {
-    background-color: @bg-color--2;
-  }
 }
 
 .add-photo__filters-list {
@@ -26,6 +24,7 @@
   align-items: center;
   flex-direction: column;
   margin-right: 30px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -47,6 +46,7 @@
   display: none;
   -webkit-appearance: none;
   background-color: transparent;
+
   &--active {
     display: block;
     position: absolute;
@@ -123,6 +123,7 @@
 .add-photo__filters-svg {
   cursor: pointer;
   fill: rgb(181, 184, 189);
+
   &:hover {
     fill: rgb(143, 150, 158);
   }
@@ -151,6 +152,7 @@
   opacity: 0.1;
   width: @mobile-wrapper-width;
   margin-bottom: 15px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -169,6 +171,7 @@
   color: @pink;
   border-color: @pink;
   opacity: 1;
+
   &:hover {
     opacity: 1;
     color: rgb(255, 255, 255);
@@ -181,7 +184,7 @@
   }
 }
 
-@media(min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .add-photo {
     .intro {
       margin-top: 43px;
@@ -209,6 +212,7 @@
     width: 100%;
     padding: 23px 10px 23px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
     &:first-child {
       padding-top: 10px;
     }
@@ -217,6 +221,7 @@
   .add-photo__filters-label {
     width: 25px;
     height: 25px;
+
     &--contrast {
       width: 20px;
       height: 20px;
@@ -226,6 +231,7 @@
   .add-photo__filters-range {
     display: inline-block;
     width: 200px;
+
     &--active {
       position: static;
       width: 200px;
@@ -243,13 +249,16 @@
   }
 
   .add-photo__form {
-    padding-top: 65px;
-    padding-bottom: 0;
+    padding: 0;
+    margin-top: 70px;
+    background-color: none;
+
     .wrapper {
       display: flex;
       justify-content: space-between;
       padding-top: 55px;
       padding-bottom: 55px;
+      background-color: @bg-color--2;
     }
   }
 
@@ -267,6 +276,7 @@
 @media (min-width: @desktop-width) {
   .add-photo {
     margin-bottom: 60px;
+
     .intro {
       margin-top: 7px;
       margin-bottom: 5px;
@@ -278,6 +288,7 @@
     display: flex;
     justify-content: flex-start;
     width: (@desktop-wrapper-width) / 2;
+
     .btn--add-photo {
       font-size: 18px;
     }
@@ -302,7 +313,7 @@
 
   .add-photo__filters-section {
     padding: 0;
-    padding-top:35px;
+    padding-top: 35px;
     width: (@desktop-wrapper-width) / 2;
   }
 
@@ -324,6 +335,7 @@
     width: 185px;
     margin: 0;
     margin-right: 40px;
+
     &:last-of-type {
       margin-right: 0;
     }

@@ -1,8 +1,3 @@
-.contacts {
-position: relative;
-overflow: hidden;
-}
-
 .contacts__address {
   display: block;
   color: @pink;
@@ -14,6 +9,7 @@ overflow: hidden;
   margin: 0;
   font-style: normal;
   text-decoration: none;
+
   &--email {
     &:hover {
       color: @text-color;
@@ -29,9 +25,14 @@ overflow: hidden;
 
 .contacts__contact-method {
   margin-top: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
+
   &:last-child {
     margin-bottom: 0;
+    margin-top: 15px;
+    .contacts__contact-method-header {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -41,7 +42,7 @@ overflow: hidden;
   font-weight: 700;
   color: rgb(0, 0, 0);
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .contacts__contact-methods-list {
@@ -52,17 +53,14 @@ overflow: hidden;
 
 .contacts-header {
   color: @text-color;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  line-height: 30px;
 }
 
 .contacts__map {
   width: 100vw;
   height: 197px;
-}
-
-.contacts__map-link {
-  z-index: -1;
-  width: 100vw;
 }
 
 .contacts__map-static {
@@ -75,6 +73,7 @@ overflow: hidden;
   padding-top: 16px;
   padding-bottom: 35px;
   background-color: @bg-color--1;
+
   .wrapper {
     margin-bottom: 0;
   }
@@ -94,12 +93,6 @@ overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    .header-main {
-      margin: 0;
-    }
-  }
-
   .contacts__contact-method {
     width: 50%;
     padding: 5px 20px 0 20px;
@@ -119,6 +112,8 @@ overflow: hidden;
 
   .contacts-header {
     padding: 0 40px;
+    line-height: 48px;
+    margin-top: 0;
   }
 
   .contacts__map {
@@ -129,6 +124,7 @@ overflow: hidden;
     width: @tablet-width;
     padding: 45px 0 10px 0;
     margin: 0;
+
     &::after {
       height: 70px;
       bottom: -69px;
@@ -145,6 +141,7 @@ overflow: hidden;
     width: 33.3%;
     margin-top: 50px;
     margin-bottom: 0;
+
     &:first-child {
       order: 0;
       padding-left: 5px;
@@ -179,6 +176,7 @@ overflow: hidden;
   .contacts__text-content {
     width: @desktop-width;
     padding-top: 60px;
+
     &::after {
       height: 125px;
       bottom: -124px;

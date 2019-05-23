@@ -1,0 +1,45 @@
+.intro {
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+
+  &--photos {
+    padding: 0 14px;
+    margin-bottom: 48px;
+  }
+
+  &--form {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+
+    &--photos {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-bottom: 90px;
+
+    &--photos {
+      padding: 0 150px;
+    }
+
+    &--form {
+      padding: 0 90px;
+    }
+  }
+}

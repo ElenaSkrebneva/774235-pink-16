@@ -13,6 +13,11 @@
   padding: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  &--index {
+    display: none;
+  }
+
   .wrapper {
     min-height: 205px;
     display: flex;
@@ -40,6 +45,7 @@
   height: 35px;
   color: @pink;
   fill: currentColor;
+
   &:hover {
     color: @text-color;
   }
@@ -60,6 +66,7 @@
   height: 40px;
   color: rgb(0, 0, 0);
   fill: currentColor;
+
   &:hover {
     color: @pink;
   }
@@ -71,6 +78,7 @@
 
 .page-footer__social-item {
   margin-left: 10px;
+
   &:first-child {
     margin-left: 0;
   }
@@ -87,6 +95,7 @@
   padding: 0;
   margin: 0;
   font-size: 0;
+
   &:hover {
     border: 4px solid @text-color;
   }
@@ -109,6 +118,18 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    &--index {
+      display: block;
+    }
+
+    &--form {
+      padding-top: 60px;
+    }
+
+    &--photos {
+      padding-top: 35px;
+    }
+
     .page-footer__social {
       padding-right: 10px;
     }
@@ -139,7 +160,8 @@
 
   .page-footer {
     &--form {
-      padding-top: 20px;
+      padding-top: 30px;
+
       .page-footer__logo-section {
         padding-bottom: 20px;
       }
@@ -147,6 +169,7 @@
 
     &--index {
       padding-top: 65px;
+
       .page-footer__logo-section {
         padding-bottom: 10px;
       }

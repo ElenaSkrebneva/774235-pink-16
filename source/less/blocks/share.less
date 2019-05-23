@@ -9,6 +9,7 @@
   font-size: 18px;
   padding: 20px;
   margin: 0;
+
   &:hover {
     background-color: rgb(29, 155, 94);
   }
@@ -74,19 +75,19 @@
 .share__form-input--checkbox:checked + .share__form-label--checkbox::before {
   background-image: url("../../img/icon-yes.svg");
   background-size: 20px 20px;
-  }
+}
 
-  .share__form-input--radio:checked + .share__form-label--radio::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    left: -27px;
-    top: 7px;
-    z-index: 1;
-    background-color: @pink;
-  }
+.share__form-input--radio:checked + .share__form-label--radio::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -27px;
+  top: 7px;
+  z-index: 1;
+  background-color: @pink;
+}
 
 .share__form-input--text {
   box-sizing: border-box;
@@ -96,6 +97,7 @@
   outline: none;
   border-radius: 3px;
   width: 100%;
+
   &:hover {
     border: 2px solid @text-color;
   }
@@ -147,6 +149,7 @@
   padding-left: 69px;
   padding-top: 42px;
   padding-bottom: 10px;
+
   &:last-child {
     padding-bottom: 0;
   }
@@ -173,6 +176,7 @@
   font-size: 18px;
   line-height: 30px;
   color: @text-color;
+
   &::before {
     box-sizing: border-box;
     content: "";
@@ -253,6 +257,7 @@
     margin: 0;
     margin-bottom: 67px;
     padding: 0;
+
     .wrapper {
       border-radius: 3px;
       box-shadow: 0 0 2px 0 rgb(230, 230, 230);
@@ -265,6 +270,7 @@
 
   .share__form__fieldset--achievements {
     order: 4;
+
     .wrapper {
       padding: 0 30px 53px 30px;
     }
@@ -272,6 +278,7 @@
 
   .share__form__fieldset--app {
     order: 2;
+
     .wrapper {
       padding: 0 30px;
       padding-bottom: 50px;
@@ -280,6 +287,7 @@
 
   .share__form__fieldset--comment {
     order: 5;
+
     .wrapper {
       padding: 0 60px 53px 60px;
     }
@@ -287,6 +295,7 @@
 
   .share__form__fieldset--contacts {
     order: 3;
+
     .wrapper {
       padding: 48px 30px 30px 29px;
     }
@@ -295,6 +304,7 @@
   .share__form__fieldset--sender {
     order: 1;
     padding: 0;
+
     .wrapper {
       box-shadow: none;
     }
@@ -312,6 +322,7 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 32px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -329,6 +340,7 @@
 
   .share__form-item--phone {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -346,6 +358,7 @@
 
   .share__form-item--email {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -365,6 +378,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 52px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -386,6 +400,7 @@
 
   .share__form-label--radio {
     padding-left: 20px;
+
     &::before {
       top: -5px;
       left: -38px;
@@ -399,6 +414,7 @@
     margin: 0;
     padding: 0;
     top: -10px;
+
     span {
       display: inline-block;
       margin: 0;
@@ -414,6 +430,7 @@
   .share__form__remark-box {
     order: 6;
     width: @tablet-width;
+
     .wrapper {
       display: flex;
       justify-content: space-between;
@@ -455,6 +472,7 @@
   .share__form__fieldset {
     width: @desktop-width;
     flex-basis: @desktop-width;
+
     .wrapper {
       width: @desktop-wrapper-width;
     }
@@ -472,12 +490,22 @@
 
   .share__form__fieldset--app {
     display: inline-block;
-    width: @desktop-width / 2;
-    flex-basis: @desktop-width / 2;
+    width: @desktop-width / 2 - 50px;
+    flex-basis: @desktop-width / 2 - 50px;
+
+    .share__form-label--radio {
+      padding-left: 65px;
+
+      &::before {
+        left: 5px;
+        top: -10px;
+      }
+    }
+
     .wrapper {
-      width: 433px;
-      position: relative;
-      right: 45px;
+      width: @desktop-width / 2 - 50px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -497,12 +525,19 @@
 
   .share__form__fieldset--sender {
     display: inline-block;
+    padding: 0;
+    margin-right: 38px;
     width: @desktop-width / 2;
     flex-basis: @desktop-width / 2;
+
+    .share__form-item--sender {
+      margin-left: 0;
+    }
+
     .wrapper {
-      width: 433px;
-      position: relative;
-      right: -45px;
+      width: 450px;
+      padding-left: 10px;
+      margin: 0;
     }
   }
 
@@ -528,6 +563,7 @@
   .share__form-item--contacts {
     width: 434px;
     margin: 0;
+
     &::after {
       width: 62px;
       height: 62px;
@@ -541,8 +577,10 @@
 
   .share__form-label {
     padding-left: 0;
+
     &--radio {
       padding-left: 35px;
+
       &::before {
         left: -25px;
       }
