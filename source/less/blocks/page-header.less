@@ -84,13 +84,14 @@
   margin: 0;
   padding: 0;
   background-color: rgb(40, 54, 69);
-  z-index: 1;
-  position: relative;
-  top: 70px;
   width: @mobile-width;
 
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--index {
+    margin-bottom: 390px;
   }
 }
 
@@ -140,7 +141,10 @@
 
   .page-header {
     width: @tablet-width;
-    top: 110px;
+
+    &--index {
+      margin-bottom: 0;
+    }
   }
 
   .page-header__logo-svg {

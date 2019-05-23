@@ -17,11 +17,11 @@
 }
 
 .download-banner {
+  width: @mobile-width;
   background-color: rgb(29, 38, 49);
   color: @bg-color--1;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -63,9 +63,10 @@
 
   .download-banner {
     position: absolute;
+    z-index: 2;
+    bottom: 78px;
+    left: 20px;
     width: 300px;
-    top: 350px;
-    left: (@tablet-width - @tablet-wrapper-width) / 2;
     background-color: transparent;
 
     .wrapper {

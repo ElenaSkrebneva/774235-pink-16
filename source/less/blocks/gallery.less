@@ -79,8 +79,14 @@
 .gallery-article--main {
   padding-bottom: 23px;
 
+  .gallery-article__big-photo {
+    width: 100vw;
+  }
+
   .gallery-article__big-photo-link {
     position: relative;
+    width: 100vw;
+    left: calc((@mobile-width - 100vw) / 2);
   }
 }
 
@@ -160,6 +166,10 @@
       height: 510px;
     }
 
+    .gallery-article__big-photo-link {
+      left: calc((@tablet-width - 100vw) / 2);
+    }
+
     .gallery-article__description {
       position: relative;
       padding-bottom: 10px;
@@ -215,6 +225,11 @@
 
   .gallery-article--main {
     margin-bottom: 55px;
+
+    .gallery-article__big-photo-link {
+      position: relative;
+      left: calc((@desktop-width - 100vw) / 2);
+    }
 
     .gallery-article__comment {
       width: 100%;

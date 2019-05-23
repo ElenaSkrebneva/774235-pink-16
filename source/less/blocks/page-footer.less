@@ -14,6 +14,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  &--index {
+    display: none;
+  }
+
   .wrapper {
     min-height: 205px;
     display: flex;
@@ -114,6 +118,18 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    &--index {
+      display: block;
+    }
+
+    &--form {
+      padding-top: 60px;
+    }
+
+    &--photos {
+      padding-top: 35px;
+    }
+
     .page-footer__social {
       padding-right: 10px;
     }
@@ -144,7 +160,7 @@
 
   .page-footer {
     &--form {
-      padding-top: 20px;
+      padding-top: 30px;
 
       .page-footer__logo-section {
         padding-bottom: 20px;

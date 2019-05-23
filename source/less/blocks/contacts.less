@@ -1,8 +1,3 @@
-.contacts {
-  position: relative;
-  overflow: hidden;
-}
-
 .contacts__address {
   display: block;
   color: @pink;
@@ -30,10 +25,14 @@
 
 .contacts__contact-method {
   margin-top: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
+    margin-top: 15px;
+    .contacts__contact-method-header {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -43,7 +42,7 @@
   font-weight: 700;
   color: rgb(0, 0, 0);
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 0;
 }
 
 .contacts__contact-methods-list {
@@ -54,17 +53,14 @@
 
 .contacts-header {
   color: @text-color;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  line-height: 30px;
 }
 
 .contacts__map {
   width: 100vw;
   height: 197px;
-}
-
-.contacts__map-link {
-  z-index: -1;
-  width: 100vw;
 }
 
 .contacts__map-static {
@@ -97,12 +93,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    .header-main {
-      margin: 0;
-    }
-  }
-
   .contacts__contact-method {
     width: 50%;
     padding: 5px 20px 0 20px;
@@ -122,6 +112,8 @@
 
   .contacts-header {
     padding: 0 40px;
+    line-height: 48px;
+    margin-top: 0;
   }
 
   .contacts__map {

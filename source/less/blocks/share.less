@@ -490,13 +490,22 @@
 
   .share__form__fieldset--app {
     display: inline-block;
-    width: @desktop-width / 2;
-    flex-basis: @desktop-width / 2;
+    width: @desktop-width / 2 - 50px;
+    flex-basis: @desktop-width / 2 - 50px;
+
+    .share__form-label--radio {
+      padding-left: 65px;
+
+      &::before {
+        left: 5px;
+        top: -10px;
+      }
+    }
 
     .wrapper {
-      width: 433px;
-      position: relative;
-      right: 45px;
+      width: @desktop-width / 2 - 50px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -516,13 +525,19 @@
 
   .share__form__fieldset--sender {
     display: inline-block;
+    padding: 0;
+    margin-right: 38px;
     width: @desktop-width / 2;
     flex-basis: @desktop-width / 2;
 
+    .share__form-item--sender {
+      margin-left: 0;
+    }
+
     .wrapper {
-      width: 433px;
-      position: relative;
-      right: -45px;
+      width: 450px;
+      padding-left: 10px;
+      margin: 0;
     }
   }
 
