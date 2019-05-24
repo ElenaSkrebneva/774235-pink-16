@@ -6,6 +6,7 @@
   var burger = button.querySelector(".main-nav-svg--burger");
   var cross= button.querySelector(".main-nav-svg--cross");
   nav.classList.add("main-nav--closed");
+  button.classList.remove("main-nav-button--hidden");
   pageHeader.classList.add("page-header--closed");
   button.addEventListener("click", function() {
     nav.classList.toggle("main-nav--closed");

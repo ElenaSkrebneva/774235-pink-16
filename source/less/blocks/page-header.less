@@ -19,6 +19,7 @@
 }
 
 .main-nav-button {
+  display: flex;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -26,11 +27,14 @@
   background-position: center;
   background-size: contain;
   padding: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   fill: currentColor;
+
+  &--hidden {
+    display: none;
+  }
 
   &--closed {
     width: 50px;
@@ -88,10 +92,6 @@
 
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  &--index {
-    margin-bottom: 390px;
   }
 }
 
@@ -196,6 +196,7 @@
 
   .main-nav-link {
     text-transform: none;
+    padding: 10px 0;
     font-family: @font--main;
     font-weight: 400;
     box-shadow: none;
@@ -209,8 +210,8 @@
       opacity: 0.3;
     }
 
-    &--current {
-      border-bottom: 3px solid rgb(255, 255, 255);
+    &--active {
+      border-bottom: 2px solid rgb(255, 255, 255);
     }
 
     &--last-one {
