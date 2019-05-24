@@ -13,16 +13,16 @@
 
   &:active {
     color: rgba(210, 41, 86, 0.3);
+    background-color: @bg-color--1;
   }
 }
 
 .download-banner {
   width: @mobile-width;
-  background-color: rgb(29, 38, 49);
   color: @bg-color--1;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 25px 0;
   text-align: center;
+  margin: 0 auto;
 }
 
 .download-banner__app {
@@ -51,23 +51,25 @@
   font-family: @font--lighter;
   font-weight: 300;
   font-size: 14px;
-  padding: 0 20px;
+  line-height: 24px;
+  padding: 5px 20px 0 20px;
+}
+
+.download-banner-wrapper {
+  background-color: rgb(29, 38, 49);
 }
 
 @media (min-width: @tablet-width) {
   .btn--download-banner {
+    margin: 0;
     max-width: 300px;
     width: 300px;
     margin-bottom: 45px;
   }
 
   .download-banner {
-    position: absolute;
-    z-index: 2;
-    bottom: 78px;
-    left: 20px;
-    width: 300px;
-    background-color: transparent;
+    padding: 0;
+    margin: 0;
 
     .wrapper {
       width: 300px;
@@ -82,6 +84,16 @@
     font-size: 18px;
     padding: 0;
   }
+
+  .download-banner-wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 108px;
+    left: 0;
+    width: 100vw;
+    padding-left: calc((100vw - @tablet-width) / 2);
+    background-color: transparent;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -89,12 +101,12 @@
     margin-bottom: 68px;
   }
 
-  .download-banner {
-    left: (@desktop-width - @desktop-wrapper-width) / 2;
-    top: 420px;
-  }
-
   .download-banner__apps-list {
     margin-bottom: 50px;
+  }
+
+  .download-banner-wrapper {
+    padding-left: calc((100vw - @desktop-width) / 2 - 8px);
+    bottom: 120px;
   }
 }

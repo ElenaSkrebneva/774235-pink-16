@@ -35,34 +35,34 @@
   flex-direction: column;
 }
 
-.share__form__fieldset {
+.share__form-fieldset {
   box-sizing: border-box;
   padding: 40px 0;
   margin: 0;
   border: none;
 }
 
-.share__form__fieldset:nth-child(2n) {
+.share__form-fieldset:nth-child(2n) {
   background-color: @bg-color--2;
 }
 
-.share__form__fieldset--comment {
+.share__form-fieldset--comment {
   padding-top: 35px;
 }
 
-.share__form__fieldset--contacts {
+.share__form-fieldset--contacts {
   .share__form-legend {
     display: none;
   }
 }
 
-.share__form__fieldset--sender {
+.share__form-fieldset--sender {
   .share__form-legend {
     display: none;
   }
 }
 
-.share__form__header-style {
+.share__form-header-style {
   color: @pink;
   text-transform: uppercase;
 }
@@ -235,9 +235,10 @@
   width: 100%;
   margin-top: 13px;
   margin-bottom: 12px;
+  padding-top: 15px;
 }
 
-.share__intro--variable {
+.share__intro-variable {
   display: none;
 }
 
@@ -253,7 +254,7 @@
     margin-bottom: 30px;
   }
 
-  .share__form__fieldset {
+  .share__form-fieldset {
     margin: 0;
     margin-bottom: 67px;
     padding: 0;
@@ -264,11 +265,11 @@
     }
   }
 
-  .share__form__fieldset:nth-child(2n) {
+  .share__form-fieldset:nth-child(2n) {
     background-color: @bg-color--1;
   }
 
-  .share__form__fieldset--achievements {
+  .share__form-fieldset--achievements {
     order: 4;
 
     .wrapper {
@@ -276,7 +277,7 @@
     }
   }
 
-  .share__form__fieldset--app {
+  .share__form-fieldset--app {
     order: 2;
 
     .wrapper {
@@ -285,7 +286,7 @@
     }
   }
 
-  .share__form__fieldset--comment {
+  .share__form-fieldset--comment {
     order: 5;
 
     .wrapper {
@@ -293,15 +294,22 @@
     }
   }
 
-  .share__form__fieldset--contacts {
+  .share__form-fieldset--contacts {
     order: 3;
 
+    .share__form-legend {
+      display: block;
+      position: absolute;
+      width: @tablet-wrapper-width - 60px;
+    }
+
     .wrapper {
+      position: relative;
       padding: 48px 30px 30px 29px;
     }
   }
 
-  .share__form__fieldset--sender {
+  .share__form-fieldset--sender {
     order: 1;
     padding: 0;
 
@@ -425,9 +433,10 @@
 
   .share__form-remark {
     text-align: right;
+    padding-top: 5px;
   }
 
-  .share__form__remark-box {
+  .share__form-remark-box {
     order: 6;
     width: @tablet-width;
 
@@ -441,6 +450,8 @@
   .share__form-textarea {
     margin-top: 30px;
     margin-bottom: 0;
+    padding-top: 13px;
+    padding-left: 18px;
     min-height: 190px;
   }
 
@@ -448,7 +459,7 @@
     margin-bottom: 0;
   }
 
-  .share__intro--variable {
+  .share__intro-variable {
     display: inline;
   }
 }
@@ -459,9 +470,10 @@
     max-width: @desktop-width;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: -10px;
   }
 
-  .share__form__achievements-list {
+  .share__form-achievements-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -469,7 +481,7 @@
     height: 200px;
   }
 
-  .share__form__fieldset {
+  .share__form-fieldset {
     width: @desktop-width;
     flex-basis: @desktop-width;
 
@@ -478,17 +490,17 @@
     }
   }
 
-  .share__form__fieldset:nth-child(2n) {
+  .share__form-fieldset:nth-child(2n) {
     background-color: @bg-color--1;
   }
 
-  .share__form__fieldset--achievements {
+  .share__form-fieldset--achievements {
     .wrapper {
       padding-bottom: 10px;
     }
   }
 
-  .share__form__fieldset--app {
+  .share__form-fieldset--app {
     display: inline-block;
     width: @desktop-width / 2 - 50px;
     flex-basis: @desktop-width / 2 - 50px;
@@ -509,30 +521,41 @@
     }
   }
 
-  .share__form__fieldset--comment {
+  .share__form-fieldset--comment {
     .wrapper {
-      padding: 0 60px 40px 60px;
+      padding: 0 60px 45px 60px;
     }
   }
 
-  .share__form__fieldset--contacts {
+  .share__form-fieldset--contacts {
+    margin-top: 0;
+
+    .share__form-input--text {
+      padding-left: 18px;
+    }
+
+    .share__form-legend {
+      display: block;
+      position: absolute;
+      width: @desktop-wrapper-width - 60px;
+      top: -10px;
+    }
+
     .wrapper {
       display: flex;
+      position: relative;
       justify-content: space-between;
       padding: 40px 30px 20px 30px;
     }
   }
 
-  .share__form__fieldset--sender {
+  .share__form-fieldset--sender {
     display: inline-block;
     padding: 0;
+    padding-top: 5px;
     margin-right: 38px;
     width: @desktop-width / 2;
     flex-basis: @desktop-width / 2;
-
-    .share__form-item--sender {
-      margin-left: 0;
-    }
 
     .wrapper {
       width: 450px;
@@ -541,7 +564,7 @@
     }
   }
 
-  .share__form__header-style {
+  .share__form-header-style {
     font-size: 14px;
   }
 
@@ -557,7 +580,7 @@
 
   .share__form-item--achievement {
     max-width: 290px;
-    margin-right: 20px;
+    padding: 37px 0 15px 87px;
   }
 
   .share__form-item--contacts {
@@ -575,6 +598,15 @@
     }
   }
 
+  .share__form-item--sender {
+    margin-left: 0;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .share__form-label {
     padding-left: 0;
 
@@ -587,8 +619,12 @@
     }
   }
 
-  .share__form__remark-box {
+  .share__form-remark-box {
     width: @desktop-width;
+
+    .share-btn {
+      padding: 20px;
+    }
   }
 
   .share__form-remark-variable {
@@ -597,7 +633,8 @@
 
   .share__form-textarea {
     margin-top: 22px;
-    padding-top: 15px;
+    padding-top: 16px;
+    padding-left: 18px;
     min-height: 130px;
   }
 }

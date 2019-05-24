@@ -95,7 +95,7 @@
                     <a class="main-nav-link" href="photos.html">Фотографии</a>
                   </li>
                   <li class="main-nav-item">
-                    <a class="main-nav-link main-nav-link--current">Конкурс</a>
+                    <a class="main-nav-link main-nav-link--active">Конкурс</a>
                   </li>
                   <li class="main-nav-item">
                     <a class="main-nav-link main-nav-link--last-one" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -113,35 +113,35 @@
         <section class="share__form-section">
           <div class="wrapper">
             <p class="intro intro--form">Поделитесь своей историей и получите шанс выиграть
-            ценный приз &mdash; 1000 миль на вашу бонусную карту!<span class="share__intro--variable"> Пожалуйста, заполните форму ниже:</span>
+            ценный приз &mdash; 1000 миль на вашу бонусную карту!<span class="share__intro-variable"> Пожалуйста, заполните форму ниже:</span>
             </p>
           </div>
           <form class="share__form" method="post" action="http://echo.htmlacademy.ru">
-            <fieldset class="share__form__fieldset share__form__fieldset--sender">
+            <fieldset class="share__form-fieldset share__form-fieldset--sender">
               <div class="wrapper">
-                <div class="share__form__header-style share__form-legend">
+                <div class="share__form-header-style share__form-legend">
                   <span>Данные заполнителя</span>
                 </div>
                 <p class="share__form-item--sender">
-                  <label for="last_name" class="share__form__header-style share__form-label">Фамилия: </label>
+                  <label for="last_name" class="share__form-header-style share__form-label">Фамилия: </label>
                   <input id="last_name" class="share__form-input--text" name="surname" placeholder="Укажите фамилию*" required>
                 </p>
                 <p class="share__form-item--sender">
-                  <label for="first_name" class="share__form__header-style share__form-label">Имя: </label>
+                  <label for="first_name" class="share__form-header-style share__form-label">Имя: </label>
                   <input id="first_name" class="share__form-input--text" name="name" placeholder="Введите ваше имя*" required>
                 </p>
                 <p class="share__form-item--sender">
-                  <label for="patroname" class="share__form__header-style share__form-label">Отчество: </label>
+                  <label for="patroname" class="share__form-header-style share__form-label">Отчество: </label>
                   <input id="patroname" class="share__form-input--text" name="patroname" placeholder="Ну и отчество тоже">
                 </p>
               </div>
             </fieldset>
-            <fieldset class="share__form__fieldset share__form__fieldset--achievements">
+            <fieldset class="share__form-fieldset share__form-fieldset--achievements">
               <div class="wrapper">
-                <div class="share__form__header-style share__form-legend">
+                <div class="share__form-header-style share__form-legend">
                   <span>Ваши безбашенные достижения в путешествии</span>
                 </div>
-                <ul class="share__form__achievements-list">
+                <ul class="share__form-achievements-list">
                   <li class="share__form-item--achievement">
                     <input class="share__form-input--checkbox" type="checkbox" name="achievement" value="shark-foto" id="shark-foto">
                     <label  class="share__form-label--checkbox" for="shark-foto">Сделал селфи с акулой</label>
@@ -169,27 +169,27 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="share__form__fieldset share__form__fieldset--contacts">
+            <fieldset class="share__form-fieldset share__form-fieldset--contacts">
               <div class="wrapper">
-                <div class="share__form__header-style share__form-legend">
+                <div class="share__form-header-style share__form-legend">
                   <span>Контактная информация</span>
                 </div>
                 <p class="share__form-item--contacts share__form-item--phone">
-                  <label for="tel" class="share__form__header-style share__form-label">Номер телефона</label>
+                  <label for="tel" class="share__form-header-style share__form-label">Номер телефона</label>
                   <input id="tel" class="share__form-input--text" type="tel" name="phone" placeholder="Номер, пожалуйста">
                 </p>
                 <p class="share__form-item--contacts share__form-item--email">
-                  <label for="email" class="share__form__header-style share__form-label">Адрес почты</label>
+                  <label for="email" class="share__form-header-style share__form-label">Адрес почты</label>
                     <input id="email" class="share__form-input--text" name="email" placeholder="Введите почту*" type="email" required>
                 </p>
               </div>
             </fieldset>
-            <fieldset class="share__form__fieldset share__form__fieldset--app">
+            <fieldset class="share__form-fieldset share__form-fieldset--app">
               <div class="wrapper">
-                <div class="share__form__header-style share__form-legend">
+                <div class="share__form-header-style share__form-legend">
                   <span>С каким приложением путешествовали?</span>
                 </div>
-                <ul class="share__form__app-list">
+                <ul class="share__form-app-list">
                   <li class="share__form-item--app">
                     <input class="share__form-input--radio" type="radio" name="app" value="ios" id="ios-app">
                     <label  class="share__form-label--radio" for="ios-app">Pink для iOS</label>
@@ -205,17 +205,17 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="share__form__fieldset share__form__fieldset--comment">
+            <fieldset class="share__form-fieldset share__form-fieldset--comment">
               <div class="wrapper">
-                <div class="share__form__header-style share__form-legend">
+                <div class="share__form-header-style share__form-legend">
                   <span>Опишите свои эмоции</span>
                 </div>
                 <label for="comment-textarea">
-                  <textarea id="comment-textarea" name="comment-textarea" class="share__form-input--text share__form-textarea" placeholder="Можно прям в карсках, не стесняясь в выражениях"></textarea>
+                  <textarea id="comment-textarea" name="comment-textarea" class="share__form-input--text share__form-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </label>
               </div>
             </fieldset>
-            <div class="share__form__remark-box">
+            <div class="share__form-remark-box">
               <div class="wrapper">
                 <button class="share-btn share-btn--submit">Отправить форму</button>
                 <p class="share__form-remark">
