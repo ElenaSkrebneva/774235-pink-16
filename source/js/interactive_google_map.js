@@ -6,10 +6,14 @@ staticMap.style.display = "none";
       zoom: 15,
       center: myLatLng
     });
+    var markerImage = {
+      url: "../img/icon-map-marker.svg",
+      scaledSize: new google.maps.Size(40, 40)
+    };
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      icon: "img/icon-map-marker.svg",
+      icon: markerImage,
       title: "Pink Map"
     });
   }

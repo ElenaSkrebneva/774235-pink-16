@@ -4,6 +4,45 @@
   }
 }
 
+.add-photo__btn {
+  color: @text-color;
+  border-color: @text-color;
+  opacity: 0.1;
+  width: @mobile-wrapper-width;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @text-color;
+  }
+}
+
+.add-photo__btn--active {
+  color: @pink;
+  border-color: @pink;
+  opacity: 1;
+
+  &:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: @pink;
+  }
+
+  &:active {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @pink;
+  }
+}
+
 .add-photo__form {
   background-color: @bg-color--2;
   padding-top: 20px;
@@ -146,51 +185,17 @@
   max-width: 100%;
 }
 
-.btn--add-photo {
-  color: @text-color;
-  border-color: @text-color;
-  opacity: 0.1;
-  width: @mobile-wrapper-width;
-  margin-bottom: 15px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &:hover {
-    opacity: 0.3;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: @text-color;
-  }
-}
-
-.btn--add-photo--active {
-  color: @pink;
-  border-color: @pink;
-  opacity: 1;
-
-  &:hover {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-    background-color: @pink;
-  }
-
-  &:active {
-    opacity: 1;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: @pink;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .add-photo {
     .intro {
       margin-top: 43px;
       margin-bottom: 5px;
     }
+  }
+
+  .add-photo__btn {
+    width: 255px;
+    margin-bottom: 25px;
   }
 
   .add-photo__btns {
@@ -267,11 +272,6 @@
     width: (@tablet-wrapper-width - 20px) / 2;
     margin: 0;
   }
-
-  .btn--add-photo {
-    width: 255px;
-    margin-bottom: 25px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -284,13 +284,23 @@
     }
   }
 
+  .add-photo__btn {
+    width: 185px;
+    margin: 0;
+    margin-right: 40px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
   .add-photo__btns {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     width: (@desktop-wrapper-width) / 2;
 
-    .btn--add-photo {
+    .add-photo__btn {
       font-size: 18px;
     }
   }
@@ -330,15 +340,5 @@
     display: flex;
     justify-content: center;
     padding-top: 58px;
-  }
-
-  .btn--add-photo {
-    width: 185px;
-    margin: 0;
-    margin-right: 40px;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
   }
 }
