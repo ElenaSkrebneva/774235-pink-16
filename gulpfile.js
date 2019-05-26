@@ -13,7 +13,7 @@ var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 
 gulp.task("images", function() {
-  return gulp.src("srouce/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
@@ -77,5 +77,5 @@ gulp.task("server", function () {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "css"));
+gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css"));
 gulp.task("start", gulp.series("build", "server"));
