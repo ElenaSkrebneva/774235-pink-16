@@ -1,4 +1,4 @@
-.share-btn {
+.form__btn {
   background-color: rgb(41, 171, 109);
   cursor: pointer;
   font-family: @font--bold;
@@ -24,72 +24,76 @@
   }
 }
 
-.share-btn--submit {
+.form__btn--submit {
   width: 100%;
   margin-bottom: 40px;
 }
 
-.share__form {
-  margin-top: -2px;
-  display: flex;
-  flex-direction: column;
-}
-
-.share__form-fieldset {
+.form__fieldset {
   box-sizing: border-box;
   padding: 40px 0;
   margin: 0;
   border: none;
 }
 
-.share__form-fieldset:nth-child(2n) {
+.form__fieldset:nth-child(2n) {
   background-color: @bg-color--2;
 }
 
-.share__form-fieldset--comment {
+.form__fieldset--comment {
   padding-top: 35px;
 }
 
-.share__form-fieldset--contacts {
-  .share__form-legend {
+.form__fieldset--contacts {
+  .form__legend {
     display: none;
   }
 }
 
-.share__form-fieldset--sender {
-  .share__form-legend {
+.form__fieldset--sender {
+  .form__legend {
     display: none;
   }
 }
 
-.share__form-header-style {
+.form__form {
+  margin-top: -2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__form-section {
+  margin-bottom: 18px;
+}
+
+.form__header-style {
   color: @pink;
   text-transform: uppercase;
 }
 
-.share__form-input--radio,
-.share__form-input--checkbox {
+.form__input--radio,
+.form__input--checkbox {
   display: none;
 }
 
-.share__form-input--checkbox:checked + .share__form-label--checkbox::before {
+.form__input--checkbox:checked + .form__label--checkbox::before {
   background-image: url("../../img/icon-yes.svg");
   background-size: 20px 20px;
 }
 
-.share__form-input--radio:checked + .share__form-label--radio::after {
+.form__input--radio:checked + .form__label--radio::after {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  left: -27px;
-  top: 7px;
+  left: -58.5px;
+  top: 2px;
   z-index: 1;
   background-color: @pink;
 }
 
-.share__form-input--text {
+.form__input--text {
   box-sizing: border-box;
   display: block;
   padding: 20.5px;
@@ -107,29 +111,14 @@
   }
 }
 
-.share__form-input--text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.form__input--text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: @text-color;
   font-size: 18px;
   line-height: 30px;
   font-family: @font--main;
 }
 
-.share__form-input--text::-moz-placeholder { /* Firefox 19+ */
-  color: @text-color;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: @font--main;
-  opacity: 1;
-}
-
-.share__form-input--text:-ms-input-placeholder { /* IE 10+ */
-  color: @text-color;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: @font--main;
-}
-
-.share__form-input--text:-moz-placeholder { /* Firefox 18- */
+.form__input--text::-moz-placeholder { /* Firefox 19+ */
   color: @text-color;
   font-size: 18px;
   line-height: 30px;
@@ -137,15 +126,33 @@
   opacity: 1;
 }
 
+.form__input--text:-ms-input-placeholder { /* IE 10+ */
+  color: @text-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: @font--main;
+}
 
-.share__form-item {
+.form__input--text:-moz-placeholder { /* Firefox 18- */
+  color: @text-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: @font--main;
+  opacity: 1;
+}
+
+.form__intro-variable {
+  display: none;
+}
+
+.form__item {
   &--sender + &--sender,
   &--contacts + &--contacts {
     margin-top: 20px;
   }
 }
 
-.share__form-item--achievement {
+.form__item--achievement {
   padding-left: 69px;
   padding-top: 42px;
   padding-bottom: 10px;
@@ -155,21 +162,21 @@
   }
 }
 
-.share__form-item--app {
+.form__item--app {
   padding-left: 69px;
   padding-top: 37px;
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 }
 
-.share__form-label {
+.form__label {
   color: @pink;
   display: block;
   padding-left: 22px;
   margin-bottom: 10px;
 }
 
-.share__form-label--checkbox,
-.share__form-label--radio {
+.form__label--checkbox,
+.form__label--radio {
   cursor: pointer;
   display: inline;
   position: relative;
@@ -202,59 +209,46 @@
   }
 }
 
-.share__form-label--radio {
+.form__label--radio {
   &::before {
     border-radius: 50%;
   }
 }
 
-.share__form-legend {
+.form__legend {
   text-align: center;
   padding: 0 20px;
   line-height: 19px;
 }
 
-.share__form-remark {
+.form__remark {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
 }
 
-.share__form-remark-variable {
+.form__remark-variable {
   display: none;
 }
 
-.share__form-section {
-  margin-bottom: 18px;
-}
-
-.share__form-textarea {
+.form__textarea {
   box-sizing: border-box;
   min-height: 200px;
   max-height: 350px;
   width: 100%;
-  margin-top: 13px;
-  margin-bottom: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   padding-top: 15px;
 }
 
-.share__intro-variable {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
-  .share-btn--submit {
+  .form__btn--submit {
     width: 300px;
     padding: 22px;
     margin: 0;
   }
 
-  .share__form {
-    margin-top: -5px;
-    margin-bottom: 30px;
-  }
-
-  .share__form-fieldset {
+  .form__fieldset {
     margin: 0;
     margin-bottom: 67px;
     padding: 0;
@@ -265,11 +259,11 @@
     }
   }
 
-  .share__form-fieldset:nth-child(2n) {
+  .form__fieldset:nth-child(2n) {
     background-color: @bg-color--1;
   }
 
-  .share__form-fieldset--achievements {
+  .form__fieldset--achievements {
     order: 4;
 
     .wrapper {
@@ -277,7 +271,7 @@
     }
   }
 
-  .share__form-fieldset--app {
+  .form__fieldset--app {
     order: 2;
 
     .wrapper {
@@ -286,7 +280,7 @@
     }
   }
 
-  .share__form-fieldset--comment {
+  .form__fieldset--comment {
     order: 5;
 
     .wrapper {
@@ -294,10 +288,10 @@
     }
   }
 
-  .share__form-fieldset--contacts {
+  .form__fieldset--contacts {
     order: 3;
 
-    .share__form-legend {
+    .form__legend {
       display: block;
       position: absolute;
       width: @tablet-wrapper-width - 60px;
@@ -309,24 +303,43 @@
     }
   }
 
-  .share__form-fieldset--sender {
+  .form__fieldset--sender {
     order: 1;
     padding: 0;
+    padding-bottom: 4px;
 
     .wrapper {
       box-shadow: none;
     }
 
-    .share__form-input--text {
+    .form__input--text {
       flex-grow: 1;
     }
   }
 
-  .share__form-item--achievement {
+  .form__form {
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+
+  .form__form-section {
+    margin-bottom: 0;
+  }
+
+  .form__input--radio:checked + .form__label--radio::after {
+    left: -26px;
+    top: 6px;
+  }
+
+  .form__intro-variable {
+    display: inline;
+  }
+
+  .form__item--achievement {
     padding: 37px 0 15px 90px;
   }
 
-  .share__form-item--contacts {
+  .form__item--contacts {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 32px;
@@ -335,18 +348,18 @@
       margin-bottom: 0;
     }
 
-    .share__form-input--text {
+    .form__input--text {
       margin-left: 30px;
       margin-bottom: 15px;
       width: 500px;
     }
 
-    .share__form-label {
+    .form__label {
       padding-left: 50px;
     }
   }
 
-  .share__form-item--phone {
+  .form__item--phone {
     position: relative;
 
     &::after {
@@ -355,7 +368,7 @@
       background-color: @border-color;
       width: 57px;
       height: 57px;
-      right: 32px;
+      right: 34px;
       top: 2px;
       background-image: url("../../img/icon-phone.svg");
       background-position: center;
@@ -364,7 +377,7 @@
     }
   }
 
-  .share__form-item--email {
+  .form__item--email {
     position: relative;
 
     &::after {
@@ -373,7 +386,7 @@
       background-color: @border-color;
       width: 57px;
       height: 57px;
-      right: 32px;
+      right: 34px;
       top: 2px;
       background-image: url("../../img/icon-mail.svg");
       background-position: center;
@@ -382,7 +395,7 @@
     }
   }
 
-  .share__form-item--sender {
+  .form__item--sender {
     display: flex;
     align-items: center;
     margin-bottom: 52px;
@@ -392,21 +405,21 @@
     }
   }
 
-  .share__form-label {
+  .form__label {
     display: inline;
     padding: 0;
     margin: 0;
     margin-right: 20px;
   }
 
-  .share__form-label--checkbox {
+  .form__label--checkbox {
     &::before {
       left: -60px;
       top: -5px;
     }
   }
 
-  .share__form-label--radio {
+  .form__label--radio {
     padding-left: 20px;
 
     &::before {
@@ -415,7 +428,7 @@
     }
   }
 
-  .share__form-legend {
+  .form__legend {
     position: relative;
     display: block;
     text-align: center;
@@ -431,12 +444,12 @@
     }
   }
 
-  .share__form-remark {
+  .form__remark {
     text-align: right;
     padding-top: 5px;
   }
 
-  .share__form-remark-box {
+  .form__remark-box {
     order: 6;
     width: @tablet-width;
 
@@ -447,33 +460,17 @@
     }
   }
 
-  .share__form-textarea {
+  .form__textarea {
     margin-top: 30px;
     margin-bottom: 0;
     padding-top: 13px;
     padding-left: 18px;
     min-height: 190px;
   }
-
-  .share__form-section {
-    margin-bottom: 0;
-  }
-
-  .share__intro-variable {
-    display: inline;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .share__form {
-    flex-direction: row;
-    max-width: @desktop-width;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    margin-top: -10px;
-  }
-
-  .share__form-achievements-list {
+  .form__achievements-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -481,7 +478,7 @@
     height: 200px;
   }
 
-  .share__form-fieldset {
+  .form__fieldset {
     width: @desktop-width;
     flex-basis: @desktop-width;
 
@@ -490,22 +487,22 @@
     }
   }
 
-  .share__form-fieldset:nth-child(2n) {
+  .form_-fieldset:nth-child(2n) {
     background-color: @bg-color--1;
   }
 
-  .share__form-fieldset--achievements {
+  .form__fieldset--achievements {
     .wrapper {
       padding-bottom: 10px;
     }
   }
 
-  .share__form-fieldset--app {
+  .form__fieldset--app {
     display: inline-block;
     width: @desktop-width / 2 - 50px;
     flex-basis: @desktop-width / 2 - 50px;
 
-    .share__form-label--radio {
+    .form__label--radio {
       padding-left: 65px;
 
       &::before {
@@ -521,20 +518,20 @@
     }
   }
 
-  .share__form-fieldset--comment {
+  .form__fieldset--comment {
     .wrapper {
-      padding: 0 60px 45px 60px;
+      padding: 0 60px 40px 60px;
     }
   }
 
-  .share__form-fieldset--contacts {
+  .form__fieldset--contacts {
     margin-top: 0;
 
-    .share__form-input--text {
+    .form__input--text {
       padding-left: 18px;
     }
 
-    .share__form-legend {
+    .form__legend {
       display: block;
       position: absolute;
       width: @desktop-wrapper-width - 60px;
@@ -549,7 +546,7 @@
     }
   }
 
-  .share__form-fieldset--sender {
+  .form__fieldset--sender {
     display: inline-block;
     padding: 0;
     padding-top: 5px;
@@ -564,26 +561,35 @@
     }
   }
 
-  .share__form-header-style {
+  .form__form {
+    flex-direction: row;
+    max-width: @desktop-width;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -10px;
+  }
+
+  .form__header-style {
     font-size: 14px;
   }
 
-  .share__form-input--radio:checked + .share__form-label--radio::after {
-    left: -14px;
+  .form__input--radio:checked + .form__label--radio::after {
+    left: 17px;
+    top: 1px;
   }
 
-  .share__form-item {
+  .form__item {
     &--contacts + &--contacts {
       margin-top: 0;
     }
   }
 
-  .share__form-item--achievement {
+  .form__item--achievement {
     max-width: 290px;
     padding: 37px 0 15px 87px;
   }
 
-  .share__form-item--contacts {
+  .form__item--contacts {
     width: 434px;
     margin: 0;
 
@@ -592,13 +598,13 @@
       height: 62px;
     }
 
-    .share__form-input--text {
+    .form__input--text {
       width: 372px;
       margin-bottom: 10px;
     }
   }
 
-  .share__form-item--sender {
+  .form__item--sender {
     margin-left: 0;
     margin-bottom: 50px;
 
@@ -607,7 +613,7 @@
     }
   }
 
-  .share__form-label {
+  .form__label {
     padding-left: 0;
 
     &--radio {
@@ -619,19 +625,19 @@
     }
   }
 
-  .share__form-remark-box {
+  .form__remark-box {
     width: @desktop-width;
 
-    .share-btn {
+    .form__btn {
       padding: 20px;
     }
   }
 
-  .share__form-remark-variable {
+  .form__remark-variable {
     display: inline;
   }
 
-  .share__form-textarea {
+  .form__textarea {
     margin-top: 22px;
     padding-top: 16px;
     padding-left: 18px;
