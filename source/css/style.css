@@ -438,7 +438,7 @@ img {
   color: #ffffff;
   line-height: 30px;
   padding: 0 30px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
 .header-main--photos {
@@ -448,7 +448,7 @@ img {
   padding-bottom: 80px;
 }
 .header-main + .header-main {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 @media (min-width: 660px) {
   .header-main {
@@ -502,6 +502,7 @@ img {
   }
   .header-main--photos {
     padding: 0;
+    margin-top: 63px;
   }
 }
 .main-header {
@@ -597,7 +598,7 @@ img {
     padding: 0;
   }
   .main-header--with-hand .body-wrapper {
-    padding-bottom: 740px;
+    padding-bottom: 745px;
   }
   .main-header--with-hand .body-wrapper::after {
     background-image: url("../../img/iphone-hand-desktop.png");
@@ -938,7 +939,7 @@ img {
 }
 .promo__intro {
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 .promo__intro::after {
   content: "";
@@ -1434,7 +1435,7 @@ img {
   .comments__comments {
     width: 1860px;
   }
-  .comments__content {
+  .comments__comment-content {
     font-size: 18px;
     margin-bottom: 35px;
   }
@@ -1531,7 +1532,7 @@ img {
 }
 .prices .wrapper {
   position: relative;
-  padding-bottom: 95px;
+  padding-bottom: 98px;
 }
 .prices__comments-option::before {
   content: "Комментарии ";
@@ -1579,16 +1580,16 @@ img {
           box-shadow: 0 0 0 3px #283645;
 }
 .prices__fake-btn--1:checked ~ .prices__table {
-  -webkit-transform: translateX(-280px);
-          transform: translateX(-280px);
+  -webkit-transform: translateX(-283px);
+          transform: translateX(-283px);
 }
 .prices__fake-btn--2:checked ~ .prices__table {
-  -webkit-transform: translateX(-560px);
-          transform: translateX(-560px);
+  -webkit-transform: translateX(-566px);
+          transform: translateX(-566px);
 }
 .prices__fake-btn--3:checked ~ .prices__table {
-  -webkit-transform: translateX(-840px);
-          transform: translateX(-840px);
+  -webkit-transform: translateX(-849px);
+          transform: translateX(-849px);
 }
 .prices__hit {
   color: #ffffff;
@@ -1641,7 +1642,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 30px;
-  padding: 14px 10px 10px 22px;
+  padding: 13px 10px 10px 22px;
   border: none;
   border-right: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
@@ -1691,7 +1692,7 @@ img {
 }
 @media (min-width: 660px) {
   .prices {
-    padding-top: 90px;
+    padding-top: 88px;
     padding-bottom: 65px;
   }
   .prices .wrapper {
@@ -1760,13 +1761,11 @@ img {
   .prices__table-header,
   .prices__table-filter,
   .prices__table-empty-cell {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    min-width: 155px;
-    max-width: 155px;
+    min-width: calc(620px / 4 - 2px);
+    max-width: calc(620px / 4 - 2px);
   }
   .prices__table-filter {
-    padding: 11px 0;
+    padding: 10px 0;
     padding-left: 16px;
   }
   .prices__table-header {
@@ -1777,8 +1776,8 @@ img {
 }
 @media (min-width: 960px) {
   .prices {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 145px;
+    padding-bottom: 95px;
   }
   .prices__hit {
     font-size: 14px;
@@ -1788,6 +1787,7 @@ img {
   }
   .prices__price-option-name {
     margin-bottom: 10px;
+    font-size: 18px;
   }
   .prices__price-option-price {
     font-size: 24px;
@@ -1797,8 +1797,8 @@ img {
   .prices__table-header,
   .prices__table-filter,
   .prices__table-empty-cell {
-    min-width: 235px;
-    max-width: 235px;
+    min-width: calc(940px / 4 - 2px);
+    max-width: calc(940px / 4 - 2px);
   }
   .prices__table-filter {
     padding: 17px 0;
@@ -1856,7 +1856,7 @@ img {
 }
 .contacts__header {
   color: #283645;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   margin-top: 25px;
   line-height: 30px;
 }
@@ -1894,6 +1894,9 @@ img {
     padding: 5px 20px 0 20px;
     margin-top: 20px;
     margin-bottom: 25px;
+  }
+  .contacts__contact-method:first-child {
+    padding-left: 30px;
   }
   .contacts__contact-method:nth-child(2) {
     padding-right: 30px;
@@ -2136,7 +2139,7 @@ img {
 .form__item--app {
   padding-left: 69px;
   padding-top: 37px;
-  padding-bottom: 9px;
+  padding-bottom: 8px;
 }
 .form__label {
   color: #d22856;
@@ -2200,8 +2203,8 @@ img {
   min-height: 200px;
   max-height: 350px;
   width: 100%;
-  margin-top: 13px;
-  margin-bottom: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   padding-top: 15px;
 }
 @media (min-width: 660px) {
@@ -2267,6 +2270,7 @@ img {
         -ms-flex-order: 1;
             order: 1;
     padding: 0;
+    padding-bottom: 4px;
   }
   .form__fieldset--sender .wrapper {
     -webkit-box-shadow: none;
@@ -2468,7 +2472,7 @@ img {
     padding-right: 0;
   }
   .form__fieldset--comment .wrapper {
-    padding: 0 60px 45px 60px;
+    padding: 0 60px 40px 60px;
   }
   .form__fieldset--contacts {
     margin-top: 0;
@@ -2666,7 +2670,7 @@ img {
   text-align: left;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 33px;
   background-image: url("../../img/icon-heart.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -2749,7 +2753,7 @@ img {
   .gallery__likes {
     position: absolute;
     width: 245px;
-    bottom: 30px;
+    bottom: 28px;
     padding-left: 0;
     background-position: right center;
   }
@@ -2757,6 +2761,9 @@ img {
 @media (min-width: 960px) {
   .gallery {
     font-size: 14px;
+  }
+  .gallery__article {
+    margin-bottom: 22px;
   }
   .gallery__article--main {
     margin-bottom: 55px;
@@ -2771,6 +2778,9 @@ img {
   }
   .gallery__article--main .gallery__description {
     padding-bottom: 20px;
+  }
+  .gallery__article--main .gallery__likes {
+    right: 32px;
   }
   .gallery__article-item {
     width: 300px;
@@ -2791,9 +2801,6 @@ img {
     top: 55px;
     right: 130px;
   }
-}
-.add-photo .intro {
-  margin-top: 22px;
 }
 .add-photo__btn {
   color: #283645;
@@ -2874,75 +2881,38 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
   width: 50px;
   height: 50px;
 }
 .add-photo__filters-range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
   display: none;
-  -webkit-appearance: none;
-  background-color: transparent;
+}
+.add-photo__filters-range::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: 2px solid #d22856;
 }
 .add-photo__filters-range--active {
   display: block;
+}
+.add-photo__filters-range-box {
   position: absolute;
   top: 83px;
-  width: 240px;
   left: 20px;
-}
-.add-photo__filters-range:focus {
-  outline: none;
-}
-.add-photo__filters-range::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  height: 2px;
-  background-color: #283645;
-}
-.add-photo__filters-range::-moz-range-track {
-  -webkit-appearance: none;
-  height: 2px;
-  background-color: #283645;
-}
-.add-photo__filters-range::-ms-track {
-  /* должен следовать после -webkit- */
-  width: 100%;
-  color: transparent;
-  border-color: transparent;
-  height: 2px;
-  background-color: #283645;
-}
-.add-photo__filters-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  border: 2px solid #d22856;
-  cursor: pointer;
-  margin-top: -7.5px;
-}
-.add-photo__filters-range::-moz-range-thumb {
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  border: 2px solid #d22856;
-  cursor: pointer;
-  margin-top: -7.5px;
-}
-.add-photo__filters-range::-ms-thumb {
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  border: 2px solid #d22856;
-  cursor: pointer;
-  margin-top: -7.5px;
 }
 .add-photo__filters-section {
   text-align: center;
@@ -2962,6 +2932,7 @@ img {
 }
 .add-photo__img-example {
   margin-bottom: 40px;
+  min-height: 350px;
 }
 .add-photo__img-example-img {
   display: -webkit-box;
@@ -2969,11 +2940,10 @@ img {
   display: flex;
   max-width: 100%;
 }
+.add-photo__intro {
+  margin-top: 22px;
+}
 @media (min-width: 660px) {
-  .add-photo .intro {
-    margin-top: 43px;
-    margin-bottom: 5px;
-  }
   .add-photo__btn {
     width: 255px;
     margin-bottom: 25px;
@@ -2984,6 +2954,7 @@ img {
     position: absolute;
     width: 255px;
     bottom: 0;
+    left: 30px;
   }
   .add-photo__filters-list {
     display: block;
@@ -3002,30 +2973,25 @@ img {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 23px 10px 23px 0;
+    padding: 15px 10px 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .add-photo__filters-item:first-child {
-    padding-top: 10px;
+    padding-top: 0;
   }
   .add-photo__filters-label {
-    width: 25px;
-    height: 25px;
-  }
-  .add-photo__filters-label--contrast {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .add-photo__filters-range {
-    display: inline-block;
+    display: block;
     width: 200px;
   }
-  .add-photo__filters-range--active {
+  .add-photo__filters-range-box {
     position: static;
-    width: 200px;
   }
   .add-photo__filters-section {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 10px;
     position: relative;
     display: -webkit-box;
@@ -3039,6 +3005,14 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 300px;
+  }
+  .add-photo__filters-svg {
+    width: 40px;
+    height: 40px;
+  }
+  .add-photo__filters-svg--contrast {
+    width: 20px;
+    height: 20px;
   }
   .add-photo__form {
     padding: 0;
@@ -3059,15 +3033,16 @@ img {
   .add-photo__img-example {
     width: 300px;
     margin: 0;
+    min-height: 400px;
+  }
+  .add-photo__intro {
+    margin-top: 43px;
+    margin-bottom: 5px;
   }
 }
 @media (min-width: 960px) {
   .add-photo {
     margin-bottom: 60px;
-  }
-  .add-photo .intro {
-    margin-top: 7px;
-    margin-bottom: 5px;
   }
   .add-photo__btn {
     width: 185px;
@@ -3086,6 +3061,7 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    left: 10px;
     width: 470px;
   }
   .add-photo__btns .add-photo__btn {
@@ -3103,9 +3079,12 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .add-photo__filters-item:first-child {
+    padding-top: 5px;
+  }
   .add-photo__filters-label {
     margin-right: 40px;
-    width: 50px;
+    width: 60px;
     height: 60px;
   }
   .add-photo__filters-range {
@@ -3113,12 +3092,24 @@ img {
   }
   .add-photo__filters-section {
     padding: 0;
-    padding-top: 35px;
+    padding-top: 40px;
+    margin-right: 20px;
     width: 470px;
+  }
+  .add-photo__filters-svg {
+    width: 60px;
+    height: 60px;
+  }
+  .add-photo__filters-svg--contrast {
+    width: 33px;
+    height: 33px;
+  }
+  .add-photo__form {
+    margin-top: 65px;
   }
   .add-photo__form .wrapper {
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
   .add-photo__img-example {
     width: 470px;
@@ -3129,6 +3120,10 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 58px;
+    min-height: 450px;
+  }
+  .add-photo__intro {
+    margin-top: 8px;
   }
 }
 .page-header {
@@ -3367,7 +3362,7 @@ img {
     display: block;
   }
   .page-footer--form {
-    padding-top: 60px;
+    padding-top: 55px;
   }
   .page-footer--photos {
     padding-top: 35px;
@@ -3400,22 +3395,22 @@ img {
     display: block;
   }
   .page-footer--form {
-    padding-top: 30px;
-  }
-  .page-footer--form .page-footer__logo-section {
-    padding-bottom: 20px;
+    padding-top: 35px;
   }
   .page-footer--form .page-footer__social {
     padding-right: 5px;
   }
   .page-footer--index {
-    padding-top: 65px;
-  }
-  .page-footer--index .page-footer__logo-section {
-    padding-bottom: 10px;
+    padding-top: 70px;
   }
   .page-footer--photos {
-    padding-top: 30px;
+    padding-top: 40px;
+  }
+  .page-footer--photos .page-footer__logo-section {
+    padding-bottom: 10px;
+  }
+  .page-footer--photos .page-footer__social {
+    padding-right: 5px;
   }
   .page-footer__social {
     padding-left: 20px;
